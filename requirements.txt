@@ -1,0 +1,7 @@
+# WUUspor — Python Bağımlılıkları
+requests
+feedparser
+beautifulsoup4
+lxml
+pywebpush
+cryptography

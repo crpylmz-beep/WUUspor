@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="WUUspor">
+  <meta name="description" content="Kişisel Premium Futbol Uygulaması — WUUspor">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="/icons/icon-180.png">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/screens.css">
+  <link rel="stylesheet" href="/css/pwa.css">
+  <title>WUUspor — Kişisel Futbol Uygulaması</title>
+</head>
+<body>
+  <div id="app">
+
+    <!-- ======================================== -->
+    <!-- 0) İLK AÇILIŞ / ONBOARDING                -->
+    <!-- ======================================== -->
+    <div id="screen-onboarding" class="screen">
+      <div class="onboarding-content">
+        <!-- Adım 1: Ana Ekrana Ekle rehberi -->
+        <div id="onboarding-step-1" class="onboarding-step">
+          <div class="onboarding-icon">📱</div>
+          <h2>WUUspor'u Ana Ekranına Ekle</h2>
+          <p>Safari'de paylaş simgesine tıkla ve <strong>"Ana Ekrana Ekle"</strong> seçeneğini seç. Uygulama telefonunda kendi başına açılacak.</p>
+          <div class="onboarding-actions">
+            <button class="btn btn-ghost" id="onboarding-btn-skip">Şimdilik Geç</button>
+            <button class="btn btn-primary" id="onboarding-btn-next">İleri</button>
+          </div>
+        </div>
+
+        <!-- Adım 2: Takım seçimi -->
+        <div id="onboarding-step-2" class="onboarding-step hidden">
+          <div class="onboarding-icon">⚽</div>
+          <h2>Takımını Seç</h2>
+          <p>Favori takımın seçimini yap. Bu seçim Ana Sayfa'da gösterilecek kartları ve bildirimleri etkiler.</p>
+          <div class="team-selection-grid">
+            <button class="team-select-card" data-team="gs">
+              <div class="team-logo logo-fallback" style="background:#A90432; color:#FDB912;">GS</div>
+              <h3>Galatasaray</h3>
+            </button>
+            <button class="team-select-card" data-team="fb">
+              <div class="team-logo logo-fallback" style="background:#00205B; color:#FFED00;">FB</div>
+              <h3>Fenerbahçe</h3>
+            </button>
+            <button class="team-select-card" data-team="bjk">
+              <div class="team-logo logo-fallback" style="background:#000000; color:#FFFFFF;">BJK</div>
+              <h3>Beşiktaş</h3>
+            </button>
+            <button class="team-select-card" data-team="ts">
+              <div class="team-logo logo-fallback" style="background:#7A1E3A; color:#5DB7E8;">TS</div>
+              <h3>Trabzonspor</h3>
+            </button>
+          </div>
+        </div>
+
+        <!-- Adım 3: Bildirim izni -->
+        <div id="onboarding-step-3" class="onboarding-step hidden">
+          <div class="onboarding-icon">🔔</div>
+          <h2>Maç ve Gol Bildirimleri</h2>
+          <p>Favori takımın maçı başladığında ve gol atıldığında sana haber verebiliriz. İstersen daha sonra Ayar'dan açabilirsin.</p>
+          <div class="onboarding-actions">
+            <button class="btn btn-primary" id="onboarding-btn-finish" disabled>Tamamla</button>
+          </div>
+        </div>
+
+        <!-- Takım seçimi ekranı (adım 1'den sonra direkt buraya) -->
+        <div id="onboarding-team-selection" class="onboarding-step hidden">
+          <div class="onboarding-icon">⚽</div>
+          <h2>Takımını Seç</h2>
+          <p>Favori takımın seçimini yap. Bu seçim Ana Sayfa'da gösterilecek kartları etkiler.</p>
+          <div class="team-selection-grid">
+            <button class="team-select-card" data-team="gs">
+              <div class="team-logo logo-fallback" style="background:#A90432; color:#FDB912;">GS</div>
+              <h3>Galatasaray</h3>
+            </button>
+            <button class="team-select-card" data-team="fb">
+              <div class="team-logo logo-fallback" style="background:#00205B; color:#FFED00;">FB</div>
+              <h3>Fenerbahçe</h3>
+            </button>
+            <button class="team-select-card" data-team="bjk">
+              <div class="team-logo logo-fallback" style="background:#000000; color:#FFFFFF;">BJK</div>
+              <h3>Beşiktaş</h3>
+            </button>
+            <button class="team-select-card" data-team="ts">
+              <div class="team-logo logo-fallback" style="background:#7A1E3A; color:#5DB7E8;">TS</div>
+              <h3>Trabzonspor</h3>
+            </button>
+          </div>
+          <div class="onboarding-actions" style="margin-top: 24px;">
+            <button class="btn btn-primary" id="onboarding-btn-finish2" disabled>Takımı Onayla</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================== -->
+    <!-- 1) ANA SAYFA                             -->
+    <!-- ======================================== -->
+    <div id="screen-home" class="screen active">
+      <header class="header safe-top">
+        <div class="header-left">
+          <div class="logo-text">WUUspor</div>
+          <div class="header-date" id="home-date">--</div>
+        </div>
+        <div class="header-right">
+          <button class="icon-button" title="Ayarlar" aria-label="Ayarlar">⚙</button>
+        </div>
+      </header>
+
+      <!-- Yedek kaynak şeridi (sadece yedek kaynak kullanıldığında görünür) -->
+      <div id="backup-banner" class="backup-banner" style="display:none;">
+        <div class="backup-dot"></div>
+        <span>Yedek kaynak: Maçkolik · <span id="backup-time">--:--</span></span>
+      </div>
+
+      <div class="home-scroll">
+        <!-- Favori takım kartı -->
+        <section class="home-section">
+          <div class="team-card" id="home-team-card">
+            <div class="team-card-content">
+              <div class="team-header">
+                <div class="team-logo" id="home-team-logo">
+                  <span class="logo-fallback">GS</span>
+                </div>
+                <div>
+                  <div class="team-name" id="home-team-name">Takım Yükleniyor</div>
+                  <div class="team-rank" id="home-team-rank">Süper Lig sırası yükleniyor</div>
+                </div>
+              </div>
+              <div class="team-main">
+                <div class="team-live-score" id="home-team-live">
+                  <div class="score-big" id="home-team-score">--</div>
+                  <div class="score-time" id="home-team-time">Maç yok</div>
+                </div>
+                <div class="team-next-match" id="home-team-next">
+                  <div style="font-size:11px;color:var(--color-text-secondary);">Sıradaki Maç</div>
+                  <div style="font-size:13px;font-weight:600;color:var(--color-text);" id="home-team-next-opp">--</div>
+                  <div style="font-size:11px;color:var(--color-text-secondary);" id="home-team-next-date">--</div>
+                </div>
+              </div>
+              <div class="team-stats">
+                <div class="stat-box">
+                  <span class="stat-label">Son Maç</span>
+                  <span class="stat-value" id="home-stat-last">--</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-label">Form</span>
+                  <div class="form-dots" id="home-stat-form">
+                    <div class="form-dot w"></div>
+                    <div class="form-dot w"></div>
+                    <div class="form-dot l"></div>
+                    <div class="form-dot w"></div>
+                    <div class="form-dot d"></div>
+                  </div>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-label">Eksikler</span>
+                  <span class="stat-value" id="home-stat-injuries">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Canlı şeridi -->
+        <section class="home-section">
+          <div class="home-section-title">
+            <span>Canlı Maçlar</span>
+          </div>
+          <div class="live-ticker" id="home-live-ticker">
+            <!-- Canlı maç kartları buraya eklenecek -->
+            <div style="text-align:center;color:var(--color-text-secondary);padding:20px;">Canlı maç yok</div>
+          </div>
+          <div style="padding:0 16px 16px 16px;text-align:center;">
+            <p style="font-size:12px;color:var(--color-text-secondary);">Canlı maç yoksa burada sıradaki maç gösterilir.</p>
+          </div>
+        </section>
+
+        <!-- Günün maçları -->
+        <section class="home-section">
+          <div class="home-section-title">
+            <span>Günün Önemli Maçları</span>
+            <a href="#matches">Tümü ›</a>
+          </div>
+          <div class="match-list" id="home-today-matches">
+            <!-- Maç satırları buraya eklenecek -->
+            <div class="empty-state" style="height:auto;padding:20px;">
+              <p style="color:var(--color-text-secondary);">Maç verileri yükleniyor...</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Son haberler -->
+        <section class="home-section">
+          <div class="home-section-title">
+            <span>Son Haberler</span>
+            <a href="#news">Tümü ›</a>
+          </div>
+          <div class="news-list" id="home-news">
+            <!-- Haber kartları buraya eklenecek -->
+            <div class="empty-state" style="height:auto;padding:20px;">
+              <p style="color:var(--color-text-secondary);">Haber verileri yükleniyor...</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- ======================================== -->
+    <!-- 2) MAÇLAR EKRANI                         -->
+    <!-- ======================================== -->
+    <div id="screen-matches" class="screen">
+      <div class="matches-header">
+        <div class="date-scroll" id="matches-date-scroll">
+          <!-- Tarih çipleri buraya eklenecek -->
+        </div>
+        <div class="tournament-scroll" id="matches-tournament-scroll">
+          <!-- Turnuva çipleri buraya eklenecek -->
+        </div>
+      </div>
+      <div class="matches-list" id="matches-list">
+        <!-- Maç satırları buraya eklenecek -->
+        <div class="empty-state" style="height:auto;padding:20px;">
+          <p style="color:var(--color-text-secondary);">Maç verileri yükleniyor...</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================== -->
+    <!-- 3) MAÇ DETAYI (sağdan kayan panel)       -->
+    <!-- ======================================== -->
+    <div id="overlay-match-detail" class="match-detail-backdrop"></div>
+    <div id="screen-match-detail" class="match-detail-panel">
+      <header class="match-detail-header">
+        <button class="icon-button" id="btn-close-match-detail" aria-label="Kapat">←</button>
+        <div style="font-size:13px;color:var(--color-text-secondary);">Maç Detayı</div>
+        <div></div>
+      </header>
+      <div class="match-detail-bg">
+        <div class="match-detail-score">
+          <div class="match-detail-team">
+            <div class="team-logo" style="width:40px;height:40px;font-size:16px;" id="md-home-logo">
+              <span class="logo-fallback">--</span>
+            </div>
+            <div class="match-detail-team-name" id="md-home-name">--</div>
+            <div class="match-detail-team-score" id="md-home-score">--</div>
+          </div>
+          <div class="match-detail-minute" id="md-minute">
+            <span class="live-dot" style="display:none;"></span>
+            <span id="md-minute-text">--</span>
+          </div>
+          <div class="match-detail-team">
+            <div class="team-logo" style="width:40px;height:40px;font-size:16px;" id="md-away-logo">
+              <span class="logo-fallback">--</span>
+            </div>
+            <div class="match-detail-team-name" id="md-away-name">--</div>
+            <div class="match-detail-team-score" id="md-away-score">--</div>
+          </div>
+        </div>
+        <div style="font-size:12px;color:var(--color-text-secondary);margin-top:8px;" id="md-competition">--</div>
+      </div>
+
+      <div class="match-detail-tabs">
+        <button class="match-detail-tab active" data-tab="summary">Özet</button>
+        <button class="match-detail-tab" data-tab="rosters">Kadrolar</button>
+        <button class="match-detail-tab" data-tab="stats">İstatistik</button>
+      </div>
+
+      <div class="match-detail-content" id="md-content-summary">
+        <div class="empty-state" style="height:auto;padding:20px;">
+          <p style="color:var(--color-text-secondary);">Maç detayı yükleniyor...</p>
+        </div>
+      </div>
+      <div class="match-detail-content" id="md-content-rosters" style="display:none;">
+        <div class="empty-state" style="height:auto;padding:20px;">
+          <p style="color:var(--color-text-secondary);">Kadro verileri yükleniyor...</p>
+        </div>
+      </div>
+      <div class="match-detail-content" id="md-content-stats" style="display:none;">
+        <div class="empty-state" style="height:auto;padding:20px;">
+          <p style="color:var(--color-text-secondary);">İstatistik verileri yükleniyor...</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================== -->
+    <!-- 4) PUAN DURUMU                           -->
+    <!-- ======================================== -->
+    <div id="screen-standings" class="screen">
+      <div class="standings-header">
+        <div class="tournament-scroll" id="standings-tournament-scroll">
+          <!-- Turnuva çipleri buraya eklenecek -->
+        </div>
+      </div>
+      <div class="standings-scroll">
+        <table class="standings-table" id="standings-table">
+          <thead>
+            <tr>
+              <th style="width:40px;">Sıra</th>
+              <th>Takım</th>
+              <th style="width:60px;">O</th>
+              <th style="width:50px;">G</th>
+              <th style="width:50px;">B</th>
+              <th style="width:50px;">M</th>
+              <th style="width:60px;">A</th>
+              <th style="width:60px;">P</th>
+            </tr>
+          </thead>
+          <tbody id="standings-body">
+            <!-- Tablo satırları buraya eklenecek -->
+          </tbody>
+        </table>
+      </div>
+      <div class="standings-zone-info" id="standings-zone-info">
+        Bölge açıklaması buraya gelecek.
+      </div>
+    </div>
+
+    <!-- ======================================== -->
+    <!-- 5) HABERLER                              -->
+    <!-- ======================================== -->
+    <div id="screen-news" class="screen">
+      <div class="news-filters" id="news-filters">
+        <!-- Takım ve kategori çipleri buraya eklenecek -->
+      </div>
+      <div class="news-list" id="news-list">
+        <!-- Haber kartları buraya eklenecek -->
+        <div class="empty-state" style="height:auto;padding:20px;">
+          <p style="color:var(--color-text-secondary);">Haber verileri yükleniyor...</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================== -->
+    <!-- 6) TRANSFER                              -->
+    <!-- ======================================== -->
+    <div id="screen-transfer" class="screen">
+      <div class="transfer-filters" id="transfer-filters">
+        <!-- Segment ve takım çipleri buraya eklenecek -->
+      </div>
+      <div class="transfer-list" id="transfer-list">
+        <!-- Transfer kartları buraya eklenecek -->
+        <div class="empty-state" style="height:auto;padding:20px;">
+          <p style="color:var(--color-text-secondary);">Transfer verileri yükleniyor...</p>
+        </div>
+      </div>
+      <div style="padding:16px;font-size:12px;color:var(--color-text-secondary);text-align:center;">
+        Resmi/Söylenti etiketi haber metnindeki kelimelerden otomatik belirlenir.
+      </div>
+    </div>
+
+    <!-- ======================================== -->
+    <!-- 7) TAKIM PANELİ (alt açılan)             -->
+    <!-- ======================================== -->
+    <div id="overlay-team-panel" class="team-panel-backdrop"></div>
+    <div id="screen-team-panel" class="team-panel">
+      <div class="team-panel-header">
+        <div class="team-logo" id="tp-logo" style="width:48px;height:48px;font-size:18px;">
+          <span class="logo-fallback">--</span>
+        </div>
+        <div>
+          <div class="match-detail-team-name" id="tp-name" style="font-size:20px;">--</div>
+          <div class="team-rank" id="tp-rank">--</div>
+        </div>
+      </div>
+      <div class="team-panel-content">
+        <div class="team-panel-section">
+          <div class="team-panel-section-title">Sıradaki Maçlar</div>
+          <div id="tp-fixtures" style="display:flex;flex-direction:column;gap:8px;">
+            <!-- Fixtures buraya eklenecek -->
+          </div>
+        </div>
+        <div class="team-panel-section">
+          <div class="team-panel-section-title">Son 5 Maç</div>
+          <div id="tp-form" class="form-dots"></div>
+        </div>
+        <div class="team-panel-section">
+          <div class="team-panel-section-title">Sakatlar</div>
+          <div id="tp-injuries" class="injury-list">
+            <!-- Sakat oyuncular buraya eklenecek -->
+          </div>
+        </div>
+        <div class="team-panel-section">
+          <div class="team-panel-section-title">Cezalılar</div>
+          <div id="tp-suspensions" class="injury-list">
+            <!-- Cezalı oyuncular buraya eklenecek -->
+          </div>
+        </div>
+        <div class="team-panel-section">
+          <div class="team-panel-section-title">Son Haberler</div>
+          <div id="tp-news" style="display:flex;flex-direction:column;gap:8px;">
+            <!-- Haberler buraya eklenecek -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================== -->
+    <!-- 8) AYARLAR                               -->
+    <!-- ======================================== -->
+    <div id="screen-settings" class="screen">
+      <div class="settings-list">
+        <div class="settings-section">
+          <div class="settings-section-title">Genel</div>
+          <div class="settings-row">
+            <span class="settings-label">Favori Takım</span>
+            <span class="settings-value" id="settings-fav-team">--</span>
+          </div>
+        </div>
+        <div class="settings-section">
+          <div class="settings-section-title">Bildirimler</div>
+          <div class="settings-row">
+            <span class="settings-label">Maç başlangıcı</span>
+            <div class="settings-toggle active" id="toggle-notify-match"></div>
+          </div>
+          <div class="settings-row">
+            <span class="settings-label">Gol bildirimi</span>
+            <div class="settings-toggle active" id="toggle-notify-goal"></div>
+          </div>
+        </div>
+        <div class="settings-section">
+          <div class="settings-section-title">Veri Durumu</div>
+          <div class="settings-row">
+            <span class="settings-label">ESPN</span>
+            <span class="settings-value" id="src-espn">--</span>
+          </div>
+          <div class="settings-row">
+            <span class="settings-label">Maçkolik</span>
+            <span class="settings-value" id="src-mackolik">--</span>
+          </div>
+          <div class="settings-row">
+            <span class="settings-label">WorldCup26</span>
+            <span class="settings-value" id="src-worldcup26">--</span>
+          </div>
+        </div>
+        <div class="settings-section">
+          <div class="settings-section-title">Uygulama</div>
+          <div class="settings-row">
+            <span class="settings-label">Sürüm</span>
+            <span class="settings-value" id="settings-version">1.0.0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ======================================== -->
+    <!-- ALT SEKME MENÜSÜ                         -->
+    <!-- ======================================== -->
+    <nav class="bottom-tabs safe-bottom">
+      <a href="#home" class="tab active" data-tab="home">
+        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"><circle cx="12" cy="13" r="1"/></path></svg>
+        <span class="tab-label">Ana Sayfa</span>
+      </a>
+      <a href="#matches" class="tab" data-tab="matches">
+        <svg viewBox="0 0 24 24"><line x1="15" y1="2" x2="15" y2="18"></line><line x1="9" y1="2" x2="9" y2="18"></line><line x1="6" y1="2" x2="6" y2="18"></line><line x1="21" y1="2" x2="21" y2="18"></line><path d="M1 9h22M1 20h22"></path></svg>
+        <span class="tab-label">Maçlar</span>
+      </a>
+      <a href="#standings" class="tab" data-tab="standings">
+        <svg viewBox="0 0 24 24"><line x1="8" y1="3" x2="21" y2="3"></line><line x1="8" y1="21" x2="21" y2="21"></line><line x1="3" y1="11" x2="21" y2="11"></line><line x1="7.5" y1="4.5" x2="7.5" y2="21"></line><line x1="21" y1="4.5" x2="21" y2="21"></line></svg>
+        <span class="tab-label">Puan</span>
+      </a>
+      <a href="#news" class="tab" data-tab="news">
+        <svg viewBox="0 0 24 24"><path d="M5 3h14l2 6h-8l1.4 3.1L15 17h-6l-.6-3.1L5 9H3l2 6z"></path><polyline points="9 9 12 12 15 9"></polyline></svg>
+        <span class="tab-label">Haberler</span>
+      </a>
+      <a href="#transfer" class="tab" data-tab="transfer">
+        <svg viewBox="0 0 24 24"><path d="M16 11v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-6m5-6V7m0 0V2m0 5v5m-7 6h12m-3 4H6m7 4v1"></path></svg>
+        <span class="tab-label">Transfer</span>
+      </a>
+    </nav>
+
+    <!-- ======================================== -->
+    <!-- SCRIPTS                                  -->
+    <!-- ======================================== -->
+    <script src="/js/data.js"></script>
+    <script src="/js/espn.js"></script>
+    <script src="/js/maclar.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/tabs.js"></script>
+    <script src="/js/first-launch.js"></script>
+    <script src="/js/pwa.js"></script>
+    <script>
+      // Uygulamayı başlat
+      WUUApp.init();
+      WUUOnboarding.init();
+      WUUPWA.register();
+
+      // Ana sayfa tarihini ayarla
+      const now = new Date();
+      const el = document.getElementById('home-date');
+      if (el) {
+        el.textContent = WUUApp.formatDateTR(now);
+      }
+
+      // Maç detayı kapatma butonu
+      const btnCloseMD = document.getElementById('btn-close-match-detail');
+      if (btnCloseMD) {
+        btnCloseMD.addEventListener('click', () => WUUApp.closeMatchDetail());
+      }
+
+      // Maç detayındaki sekmeler
+      document.querySelectorAll('.match-detail-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+          document.querySelectorAll('.match-detail-tab').forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+          const target = tab.dataset.tab;
+          document.querySelectorAll('.match-detail-content').forEach(c => c.style.display = 'none');
+          const content = document.getElementById('md-content-' + target);
+          if (content) content.style.display = 'block';
+        });
+      });
+
+      // Ayarlar toggle'ları
+      document.querySelectorAll('.settings-toggle').forEach(toggle => {
+        toggle.addEventListener('click', () => {
+          toggle.classList.toggle('active');
+        });
+      });
+
+      // Ayarlar ekranı açıldığında favori takımı göster
+      const favEl = document.getElementById('settings-fav-team');
+      if (favEl) {
+        const fav = localStorage.getItem('wuuspor_favori') || 'Seçilmedi';
+        const names = { gs: 'Galatasaray', fb: 'Fenerbahçe', bjk: 'Beşiktaş', ts: 'Trabzonspor' };
+        favEl.textContent = names[fav] || fav;
+      }
+
+      // Maç verilerini yükle (ESPN'den gerçek veri)
+      async function ilkYukleme() {
+        try {
+          const sonuc = await WUUMaclar.tumTurnuvalarinMaclariniYukle();
+          console.log("Maç yükleme tamamlandı:", sonuc);
+
+          // Puan durumunu yükle ve göster (Süper Lig varsayılan)
+          const standings = await WUUMaclar.tumPuanlariniYukle();
+          WUUMaclar.puanTablosunaYaz(standings, "tur1");
+
+          // Otomatik yenilemeyi başlat
+          WUUMaclar.otomatikYenilemeyiBaslat();
+
+          console.log("WUUspor hazır.");
+        } catch (hata) {
+          console.error("İlk yükleme hatası:", hata);
+        }
+      }
+
+      ilkYukleme();
+    </script>
+  </div>
+</body>
+</html>

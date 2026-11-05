@@ -1,0 +1,48 @@
+/* ========================================
+   WUUspor — Tasarım Değişkenleri (Design Tokens)
+   Tüm renkler, yazı tipleri ve boşluklar burada tanımlı.
+   ======================================== */
+
+/* --- Renk Paleti --- */
+:root {
+  /* Temel tema renkleri */
+  --color-bg: #07090D;
+  --color-card: #10141B;
+  --color-card-layer2: #161B24;
+  --color-border: #222833;
+  --color-text: #F2F4F7;
+  --color-text-secondary: #8B93A1;
+
+  /* Durum renkleri */
+  --color-live: #FF3B30;
+  --color-win: #30D158;
+
+  /* Takım vurgu renkleri (iki ton) */
+  --team-gs-primary: #FDB912;
+  --team-gs-secondary: #A90432;
+  --team-fb-primary: #FFED00;
+  --team-fb-secondary: #00205B;
+  --team-bjk-primary: #FFFFFF;
+  --team-bjk-secondary: #000000;
+  --team-ts-primary: #7A1E3A;
+  --team-ts-secondary: #5DB7E8;
+
+  /* Boşluk sistemi (8'in katları) */
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+--space-24: 24px;
+--space-32: 32px;
+
+  /* Yuvarlaklık */
+  --radius-card: 16px;
+  --radius-button: 12px;
+
+  /* Geçişler */
+  --transition-fast: 200ms ease;
+  --transition-medium: 300ms ease;
+
+  /* Gölge yerine ince çizgi ve katman */
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.4);
+}

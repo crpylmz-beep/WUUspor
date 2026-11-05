@@ -1,0 +1,26 @@
+{
+  "takimlar": {
+    "gs": ["galatasaray", "cimbom", "sarı-kırmızılı", "aslan"],
+    "fb": ["fenerbahçe", "sarı-lacivertli", "kanarya"],
+    "bjk": ["beşiktaş", "siyah-beyazlı", "kartal"],
+    "ts": ["trabzonspor", "bordo-mavili", "karadeniz fırtınası"]
+  },
+  "kategoriler": {
+    "transfer": ["transfer", "imza", "sözleşme", "bonservis", "kiralık", "teklif", "anlaşma", "gündeminde", "ilgileniyor", "talip"],
+    "sakatlık-ceza": ["sakat", "sakatlandı", "ameliyat", "tedavi", "sahalardan uzak", "forma giyemeyecek", "cezalı", "kırmızı kart", "pfdk", "kart sınırı"],
+    "maç": ["maç", "skor", "gol", "karşılaşma", "ilk 11", "kadro"]
+  },
+  "transferDurumu": {
+    "resmi": ["resmen", "resmi olarak", "kap", "açkladı", "imzaladı", "sözleşme imzalandı", "aramıza hoş geldin", "duyurdu"],
+    "soylenti": ["iddia", "gündeminde", "ilgileniyor", "talip", "listesinde", "masada", "yakın takipte", "görüşmeler sürüyor"]
+  },
+  "ozet": {
+    "maxCumle": 3,
+    "maxKarakter": 280,
+    "sonEki": "…"
+  },
+  "tekrarAyikla": {
+    "eskıOrani": 0.8,
+    "eskiGunIci": true
+  }
+}

@@ -1,0 +1,664 @@
+/* ========================================
+   WUUspor — Ekran Stilleri (Screens)
+   ======================================== */
+
+@charset "UTF-8";
+@import url("variables.css");
+
+/* --- İlk Açılış (Onboarding) --- */
+#onboarding {
+  background-color: var(--color-bg);
+}
+
+.onboarding-content {
+  padding: env(safe-area-inset-top) 24px 24px 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.onboarding-step {
+  text-align: center;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.onboarding-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background-color: var(--color-card-layer2);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-24) auto;
+  font-size: 28px;
+}
+
+.onboarding-step h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--color-text);
+  margin-bottom: var(--space-16);
+}
+
+.onboarding-step p {
+  font-size: 15px;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--space-24);
+}
+
+.onboarding-actions {
+  display: flex;
+  gap: var(--space-12);
+}
+
+/* --- Takım Seçim Kartları --- */
+.team-selection-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  padding: var(--space-16);
+}
+
+.team-select-card {
+  border-radius: var(--radius-card);
+  border: 2px solid var(--color-border);
+  padding: var(--space-20);
+  cursor: pointer;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-12);
+}
+
+.team-select-card:active {
+  transform: scale(0.97);
+}
+
+.team-select-card.selected {
+  border-color: var(--team-accent);
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1);
+}
+
+.team-select-card h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--color-text);
+}
+
+/* --- Ana Sayfa --- */
+#home {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.home-scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 80px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.home-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.home-section {
+  padding: 0 var(--space-16);
+  margin-bottom: var(--space-16);
+}
+
+.home-section-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-text);
+  margin-bottom: var(--space-12);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-section-title a {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Manrope", sans-serif;
+}
+
+.home-section-title a:hover {
+  color: var(--color-text);
+}
+
+/* --- Maçlar Ekranı --- */
+.matches-header {
+  padding: env(safe-area-inset-top) 16px 16px 16px;
+  background-color: var(--color-bg);
+}
+
+.date-scroll {
+  display: flex;
+  gap: var(--space-12);
+  overflow-x: auto;
+  margin-bottom: var(--space-16);
+  scrollbar-width: none;
+  padding-bottom: 8px;
+}
+
+.date-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.date-chip {
+  flex: 0 0 auto;
+  padding: var(--space-8) var(--space-16);
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+.date-chip.active {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+}
+
+.tournament-scroll {
+  display: flex;
+  gap: var(--space-8);
+  overflow-x: auto;
+  margin-bottom: var(--space-16);
+  scrollbar-width: none;
+  padding-bottom: 8px;
+}
+
+.tournament-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.tournament-chip {
+  flex: 0 0 auto;
+  padding: var(--space-8) var(--space-16);
+  background-color: var(--color-card-layer2);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+.tournament-chip.active {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+}
+
+.matches-list {
+  padding: 0 var(--space-16) var(--space-16) var(--space-16);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+/* --- Maç Detayı --- */
+.match-detail-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 200;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-medium);
+}
+
+.match-detail-backdrop.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.match-detail-panel {
+  position: fixed;
+  inset: 0;
+  z-index: 201;
+  transform: translateX(100%);
+  transition: transform var(--transition-medium);
+}
+
+.match-detail-panel.visible {
+  transform: translateX(0);
+}
+
+.match-detail-header {
+  padding: env(safe-area-inset-top) 16px 16px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-bg);
+}
+
+.match-detail-bg {
+  background: linear-gradient(135deg, var(--color-card-layer2), var(--color-card));
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: var(--space-24);
+  margin-bottom: var(--space-16);
+}
+
+.match-detail-score {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-16);
+}
+
+.match-detail-team {
+  text-align: center;
+  flex: 1;
+}
+
+.match-detail-team-name {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-text);
+  margin-bottom: var(--space-4);
+}
+
+.match-detail-team-score {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--color-text);
+}
+
+.match-detail-minute {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: var(--space-8);
+}
+
+.match-detail-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--space-16);
+}
+
+.match-detail-tab {
+  flex: 1;
+  padding: var(--space-12);
+  background: none;
+  border: none;
+  color: var(--color-text-secondary);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.match-detail-tab.active {
+  color: var(--color-text);
+  border-bottom-color: var(--color-text);
+}
+
+.match-detail-tab:active {
+  opacity: 0.7;
+}
+
+.match-detail-content {
+  padding: 0 var(--space-16);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+}
+
+/* --- Puan Durumu --- */
+.standings-header {
+  padding: env(safe-area-inset-top) 16px 16px 16px;
+  background-color: var(--color-bg);
+}
+
+.standings-scroll {
+  overflow-x: auto;
+  margin-bottom: var(--space-16);
+  scrollbar-width: none;
+  padding-bottom: 8px;
+}
+
+.standings-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.standings-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+
+.standings-table th {
+  background-color: var(--color-card-layer2);
+  color: var(--color-text-secondary);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: var(--space-12) var(--space-16);
+  text-align: left;
+}
+
+.standings-table td {
+  padding: var(--space-12) var(--space-16);
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+  font-size: 14px;
+}
+
+.standings-table tr:last-child td {
+  border-bottom: none;
+}
+
+.standings-table tr.favored {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.standings-table tr.big-four {
+  border-left: 3px solid var(--color-live);
+}
+
+.standings-pos {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.standings-pts {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  color: var(--color-win);
+}
+
+.standings-zone-info {
+  padding: 0 var(--space-16) var(--space-16) var(--space-16);
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* --- Haberler --- */
+.news-filters {
+  padding: env(safe-area-inset-top) 16px 16px 16px;
+  background-color: var(--color-bg);
+  display: flex;
+  gap: var(--space-8);
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-bottom: 16px;
+}
+
+.news-filters::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-chip {
+  flex: 0 0 auto;
+  padding: var(--space-8) var(--space-14);
+  background-color: var(--color-card-layer2);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.filter-chip.active {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+}
+
+.news-list {
+  padding: 0 var(--space-16) var(--space-16) var(--space-16);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+/* --- Transfer --- */
+.transfer-filters {
+  padding: env(safe-area-inset-top) 16px 16px 16px;
+  background-color: var(--color-bg);
+  display: flex;
+  gap: var(--space-8);
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-bottom: 16px;
+}
+
+.transfer-filters::-webkit-scrollbar {
+  display: none;
+}
+
+.transfer-list {
+  padding: 0 var(--space-16) var(--space-16) var(--space-16);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.transfer-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.transfer-badge.resmi {
+  background-color: rgba(48, 209, 88, 0.15);
+  color: var(--color-win);
+}
+
+.transfer-badge.soylenti {
+  background-color: rgba(255, 159, 0, 0.15);
+  color: #FF9F0A;
+}
+
+/* --- Takım Paneli (alt açılan) --- */
+.team-panel-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 150;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-medium);
+}
+
+.team-panel-backdrop.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.team-panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 151;
+  transform: translateY(100%);
+  transition: transform var(--transition-medium);
+  background-color: var(--color-card);
+  border-top: 1px solid var(--color-border);
+  border-radius: var(--radius-card) var(--radius-card) 0 0;
+  padding-bottom: env(safe-area-inset-bottom);
+  max-height: 85dvh;
+  overflow-y: auto;
+}
+
+.team-panel.visible {
+  transform: translateY(0);
+}
+
+.team-panel-header {
+  padding: var(--space-16);
+  display: flex;
+  align-items: center;
+  gap: var(--space-16);
+}
+
+.team-panel-content {
+  padding: 0 var(--space-16) var(--space-24) var(--space-16);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+}
+
+.team-panel-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.team-panel-section-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--space-8);
+}
+
+.injury-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.injury-row {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-12);
+  background-color: var(--color-card-layer2);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+}
+
+.injury-info {
+  flex: 1;
+}
+
+.injury-name {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.injury-detail {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  margin-top: 2px;
+}
+
+.injury-date {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+/* --- Ayarlar --- */
+.settings-list {
+  padding: env(safe-area-inset-top) 16px var(--space-16) 16px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+}
+
+.settings-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.settings-section-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.settings-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-16);
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+}
+
+.settings-label {
+  font-size: 15px;
+  color: var(--color-text);
+}
+
+.settings-value {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.settings-toggle {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  background-color: var(--color-border);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.settings-toggle::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-text);
+  border-radius: 50%;
+  transition: transform var(--transition-fast);
+}
+
+.settings-toggle.active {
+  background-color: var(--color-win);
+}
+
+.settings-toggle.active::after {
+  transform: translateX(20px);
+}
+
+/* --- Genel yardımcı --- */
+.section-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-text);
+  margin-bottom: var(--space-12);
+}

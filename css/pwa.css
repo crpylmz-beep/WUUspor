@@ -1,0 +1,28 @@
+/* ========================================
+   WUUspor — PWA Özel Stilleri
+   ======================================== */
+
+@charset "UTF-8";
+@import url("variables.css");
+
+/* PWA standalone modunda adres çubuğu gizli */
+@media all and (display-mode: standalone) {
+  body {
+    padding-top: env(safe-area-inset-top);
+  }
+}
+
+/* iPhone 15 Pro Max optimize */
+@media (max-width: 430px) {
+  .score-big {
+    font-size: 40px;
+  }
+
+  .team-name {
+    font-size: 20px;
+  }
+
+  .bottom-tabs {
+    height: 56px;
+  }
+}

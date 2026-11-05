@@ -1,0 +1,45 @@
+# --- Python ---
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# --- Gizli bilgiler (ASLA repoya yüklenmesin) ---
+.env
+.env.local
+.env.production
+*.secret
+secrets.json
+
+# --- Log dosyaları ---
+*.log
+error.log
+debug.log
+
+# --- Veri klasörü (Actions produce eder, bilgisayarda gerek yok) ---
+/data/*.json
+!/data/.gitkeep
+
+# --- İşletim sistemi ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- VS Code ---
+.vscode/
+*.code-workspace
+
+# --- Kurulum ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Gizli anahtarlar (VAPID vb.) ---
+*.pem
+*.key
+vapid_private_key*
+vapid-private-key*
