@@ -486,6 +486,8 @@
     <script src="js/tabs.js"></script>
     <script src="js/first-launch.js"></script>
     <script src="js/pwa.js"></script>
+    <script src="js/haberler.js"></script>
+    <script src="js/takim.js"></script>
     <script>
       // Uygulamayı başlat
       WUUApp.init();
@@ -531,6 +533,49 @@
         const names = { gs: 'Galatasaray', fb: 'Fenerbahçe', bjk: 'Beşiktaş', ts: 'Trabzonspor' };
         favEl.textContent = names[fav] || fav;
       }
+
+      // --- Haberler ekranı: veri yükle ---
+      const tabNews = document.querySelector('.tab[data-tab="news"]');
+      if (tabNews) {
+        tabNews.addEventListener('click', () => {
+          WUUHaberler.haberleriYukleVeGoster();
+        });
+      }
+
+      // --- Transfer ekranı: veri yükle ---
+      const tabTransfer = document.querySelector('.tab[data-tab="transfer"]');
+      if (tabTransfer) {
+        tabTransfer.addEventListener('click', () => {
+          WUUHaberler.transferleriYukleVeGoster();
+        });
+      }
+
+      // --- Ana sayfa favori takım kartını doldur ---
+      async function homeKartiDoldur() {
+        const fav = localStorage.getItem('wuuspor_favori');
+        if (!fav) return;
+
+        const names = { gs: 'Galatasaray', fb: 'Fenerbahçe', bjk: 'Beşiktaş', ts: 'Trabzonspor' };
+        const elName = document.getElementById('home-team-name');
+        const elLogo = document.getElementById('home-team-logo');
+        const elRank = document.getElementById('home-team-rank');
+
+        if (elName) elName.textContent = names[fav] || fav;
+        if (elLogo) {
+          elLogo.innerHTML = `<span class="logo-fallback">${fav.toUpperCase()}</span>`;
+          elLogo.style.backgroundColor = { gs: '#A90432', fb: '#00205B', bjk: '#000000', ts: '#7A1E3A' }[fav] || '#222833';
+          elLogo.style.color = { gs: '#FDB912', fb: '#FFED00', bjk: '#FFFFFF', ts: '#5DB7E8' }[fav] || '#F2F4F7';
+        }
+        if (elRank) elRank.textContent = 'Süper Lig · ' + (names[fav] || fav);
+
+        // Takım kartına tıklandığında takım panelini aç
+        const teamCard = document.getElementById('home-team-card');
+        if (teamCard) {
+          teamCard.style.cursor = 'pointer';
+          teamCard.onclick = () => WUUTakim.takimPaneliniAc(fav);
+        }
+      }
+      homeKartiDoldur();
 
       // Maç verilerini yükle (ESPN'den gerçek veri)
       async function ilkYukleme() {
