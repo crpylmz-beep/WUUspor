@@ -1,6 +1,6 @@
 /* ========================================
    WUUspor — Takım Paneli Verisi (takim.js)
-   /data/eksikler_*.json dosyasından sakat/cezalı oyuncu
+   data/eksikler_*.json dosyasından sakat/cezalı oyuncu
    bilgilerini yükler ve takım panelini doldurur.
    Hiçbir sahte/static veri kullanılmayacak.
    ======================================== */
@@ -27,21 +27,16 @@ const WUUTakim = (() => {
     }
   }
 
-  /* --- Takım logosunu bul (ESPN'den) --- */
+  /* --- Takım logosunu bul (data/mac_verileri.json'dan) --- */
   async function takimLogosuBul(takimKodu) {
-    const ligler = Object.values(WUUESPN.LIGLER);
-    for (const lig of ligler) {
-      try {
-        const maclar = await WUUESPN.getGununMaclari(lig.kod);
-        for (const mac of maclar) {
-          for (const t of [mac.evSahibi, mac.deplasman]) {
-            if (t && t.id && String(TAKIM_ID[takimKodu]) === String(t.id) && t.logo) {
-              return t.logo;
-            }
-          }
+    const veri = await WUUESPN.jsonYukle('mac_verileri.json');
+    if (!veri) return null;
+    const maclar = WUUESPN.maclariAl(veri);
+    for (const mac of maclar) {
+      for (const t of [mac.evSahibi, mac.deplasman]) {
+        if (t && t.id && String(TAKIM_ID[takimKodu]) === String(t.id) && t.logo) {
+          return t.logo;
         }
-      } catch (e) {
-        // devam et
       }
     }
     return null;
@@ -134,7 +129,14 @@ const WUUTakim = (() => {
     const ligKodu = 'tur1';
     const takimId = TAKIM_ID[takimKodu];
     try {
-      const takvim = await WUUESPN.getTakimTakvimi(ligKodu, takimId);
+      let veri = await WUUESPN.jsonYukle('mac_verileri.json');
+      if (!veri) {
+        veri = await WUUESPN.jsonYukle('mac_yedek.json');
+      }
+      const takvim = WUUESPN.maclariAl(veri).filter(m =>
+        (m.evSahibi && String(m.evSahibi.id) === String(takimId)) ||
+        (m.deplasman && String(m.deplasman.id) === String(takimId))
+      );
       const gelcek = takvim.slice(0, 3);
       if (gelcek.length === 0) {
         container.innerHTML = '<p style="color:var(--color-text-secondary);font-size:12px;">Fikstür yok.</p>';

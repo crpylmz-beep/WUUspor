@@ -1,6 +1,6 @@
 /* ========================================
    WUUspor — Haber ve Transfer Verisi (haberler.js)
-   /data/haberler.json ve /data/transferler.json dosyalarından
+   data/haberler.json ve data/transferler.json dosyalarından
    RSS haberlerini yükler ve ekrana yazar.
    Hiçbir sahte/static veri kullanılmayacak.
    ======================================== */

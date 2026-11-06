@@ -1,6 +1,6 @@
 /* ========================================
    WUUspor — Maç Yöneticisi (maclar.js)
-   ESPN'den gerçek maç verilerini çeker ve arayüzü günceller.
+   Veri data/ klasöründeki JSON dosyalarından okunur.
    Hiçbir sahte/static veri kullanılmayacak.
    ======================================== */
 
@@ -9,32 +9,26 @@ const WUUMaclar = (() => {
   let otomatikYenilemeId = null;
   let canliMacVar = false;
 
-  /* --- ESPN'den tüm turnuvaların maçlarını çek --- */
+  /* --- Tüm maçları data/ klasöründen yükle --- */
   async function tumTurnuvalarinMaclariniYukle() {
     const sonuclariGoster = document.getElementById("home-today-matches");
     const canliTicker = document.getElementById("home-live-ticker");
 
     if (!sonuclariGoster) return;
 
-    const tumMaclar = [];
-    let hataVar = false;
-
-    for (const [anahtar, lig] of Object.entries(WUUESPN.LIGLER)) {
-      try {
-        const maclar = await WUUESPN.getGununMaclari(lig.kod);
-        for (const mac of maclar) {
-          mac.turuvaKodu = anahtar;
-          mac.turuvaAd = lig.ad;
-          tumMaclar.push(mac);
-          if (mac.canli) canliMacVar = true;
-        }
-      } catch (hata) {
-        console.error(lig.ad + " maçları çekilemedi:", hata);
-        hataVar = true;
-      }
+    let veri = await WUUESPN.jsonYukle('mac_verileri.json');
+    if (!veri) {
+      veri = await WUUESPN.jsonYukle('mac_yedek.json');
     }
 
-    // Arayüzü güncelle
+    const tumMaclar = WUUESPN.maclariAl(veri);
+    let hataVar = false;
+
+    for (const mac of tumMaclar) {
+      mac.turuvaAd = WUUESPN.LIGLER[mac.turuvaKodu] ? WUUESPN.LIGLER[mac.turuvaKodu].ad : mac.turuvaKodu;
+      if (mac.canli) canliMacVar = true;
+    }
+
     canliTickeriGuncelle(tumMaclar);
     gununMaclariniGuncelle(tumMaclar);
 
@@ -88,7 +82,6 @@ const WUUMaclar = (() => {
     const liste = document.getElementById("home-today-matches");
     if (!liste) return;
 
-    // 4 büyük takımları önce, sonra diğerleri
     const buyukIdler = [432, 436, 1895, 997];
     const sirali = [...maclar].sort((a, b) => {
       const aBuyuk = buyukIdler.includes(a.evSahibi?.id) || buyukIdler.includes(a.deplasman?.id) ? 1 : 0;
@@ -96,7 +89,6 @@ const WUUMaclar = (() => {
       return bBuyuk - aBuyuk;
     });
 
-    // En fazla 3 maç göster
     const gosterilecek = sirali.slice(0, 3);
 
     if (gosterilecek.length === 0) {
@@ -148,10 +140,12 @@ const WUUMaclar = (() => {
   }
 
 
-
   /* --- Maç detayı arayüzüne yaz --- */
   function macDetayiArayuzeYaz(detay) {
-    // Takım isimleri ve skorlar
+    if (!detay) {
+      alert("Maç detayı bulunamadı.");
+      return;
+    }
     const elHome = document.getElementById("md-home-name");
     const elAway = document.getElementById("md-away-name");
     const elHomeSkor = document.getElementById("md-home-score");
@@ -168,7 +162,6 @@ const WUUMaclar = (() => {
     if (elMinute) elMinute.textContent = detay.dakika ? detay.dakika + "'" : "-";
     if (elComp) elComp.textContent = detay.turuva || "Maç Detayı";
 
-    // Logolar
     if (elHomeLogo && detay.evSahibi && detay.evSahibi.logo) {
       elHomeLogo.innerHTML = `<img src="${detay.evSahibi.logo}" alt="${detay.evSahibi.ad}">`;
     }
@@ -176,7 +169,6 @@ const WUUMaclar = (() => {
       elAwayLogo.innerHTML = `<img src="${detay.deplasman.logo}" alt="${detay.deplasman.ad}">`;
     }
 
-    // İçerik (Özet sekmesi)
     const content = document.getElementById("md-content-summary");
     if (content) {
       let html = "";
@@ -197,14 +189,13 @@ const WUUMaclar = (() => {
     }
   }
 
-
-  /* --- Puan durumunu yükle (tüm turnuvalar) --- */
+  /* --- Puan durumunu yükle (data/puan_durumu.json) --- */
   async function tumPuanlariniYukle() {
     const tumStandings = {};
 
     for (const [anahtar, lig] of Object.entries(WUUESPN.LIGLER)) {
       try {
-        const standings = await WUUESPN.getPuanDurumu(lig.kod);
+        const standings = await WUUESPN.getPuanDurumu(anahtar);
         tumStandings[anahtar] = standings;
       } catch (hata) {
         console.error(lig.ad + " puan durumu çekilemedi:", hata);
@@ -224,7 +215,6 @@ const WUUMaclar = (() => {
 
     body.innerHTML = "";
 
-    // İlk grupu göster (Süper Lig için tek grup)
     const grup = veri.gruplar[0];
     if (!grup) return;
 
@@ -254,7 +244,6 @@ const WUUMaclar = (() => {
       body.appendChild(satir);
     }
 
-    // Bölge bilgisi
     if (zoneInfo) {
       if (ligKodu === "tur1") {
         zoneInfo.textContent = "1-3: Avrupa kupası · 18: Küme düşme";
@@ -264,12 +253,10 @@ const WUUMaclar = (() => {
     }
   }
 
-
   /* --- Otomatik yenileme başlat --- */
   function otomatikYenilemeyiBaslat() {
     if (otomatikYenilemeId) clearInterval(otomatikYenilemeId);
 
-    // Canlı maç varsa 20 sn, yoksa 2 dakikada bir
     const aralik = canliMacVar ? 20000 : 120000;
 
     otomatikYenilemeId = setInterval(async () => {
