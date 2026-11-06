@@ -168,8 +168,12 @@ def puanlari_normalize_et(veri, lig_kodu):
     try:
         children = veri.get("children") or []
         for child in children:
-            standings = child.get("standings") or []
-            for st in standings:
+            standings_raw = child.get("standings") or {}
+            if isinstance(standings_raw, dict):
+                standings_list = [standings_raw]
+            else:
+                standings_list = standings_raw or []
+            for st in standings_list:
                 grup = {
                     "ad": st.get("name") or "Genel",
                     "sira": (st.get("type") or {}).get("text"),

@@ -222,8 +222,8 @@ const WUUMaclar = (() => {
       const satir = document.createElement("tr");
       const favori = localStorage.getItem("wuuspor_favori");
       const buyukIdler = [432, 436, 1895, 997];
-      const buyukMu = buyukIdler.includes(takim.id);
-      satir.className = (favori && takim.id === WUUESPN.TAKIM_ID[favori]) ? "favored" : (buyukMu ? "big-four" : "");
+      const buyukMu = buyukIdler.includes(Number(takim.id));
+      satir.className = (favori && String(takim.id) === String(WUUESPN.TAKIM_ID[favori])) ? "favored" : (buyukMu ? "big-four" : "");
 
       satir.innerHTML = `
         <td class="standings-pos">${takim.sira ?? "-"}</td>
