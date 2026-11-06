@@ -5,19 +5,19 @@
 
 const CACHE_NAME = 'wuuspore-v1';
 const APP_SHELL = [
-  '/',
-  '/index.html',
-  '/css/variables.css',
-  '/css/layout.css',
-  '/css/components.css',
-  '/css/screens.css',
-  '/css/pwa.css',
-  '/js/data.js',
-  '/js/app.js',
-  '/js/tabs.js',
-  '/js/first-launch.js',
-  '/js/pwa.js',
-  '/manifest.webmanifest'
+  './',
+  'index.html',
+  'css/variables.css',
+  'css/layout.css',
+  'css/components.css',
+  'css/screens.css',
+  'css/pwa.css',
+  'js/data.js',
+  'js/app.js',
+  'js/tabs.js',
+  'js/first-launch.js',
+  'js/pwa.js',
+  'manifest.webmanifest'
 ];
 
 // Kurulum: uygulama kabuğunu önbelleğe al
@@ -45,7 +45,7 @@ self.addEventListener('fetch', (event) => {
   const url = new URL(event.request.url);
 
   // Uygulama kabuğu dosyaları için cache-first
-  if (APP_SHELL.includes(url.pathname)) {
+  if (APP_SHELL.some((p) => url.pathname.endsWith('/' + p) || url.pathname === '/' + p || url.pathname.endsWith(p))) {
     event.respondWith(
       caches.match(event.request).then((cached) => {
         if (cached) return cached;
