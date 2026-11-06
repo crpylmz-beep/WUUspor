@@ -9,8 +9,8 @@ const WUUPWA = (() => {
   async function register() {
     if ('serviceWorker' in navigator) {
       try {
-        registration = await navigator.serviceWorker.register('/sw.js', {
-          scope: '/'
+        registration = await navigator.serviceWorker.register('sw.js', {
+          scope: './'
         });
         console.log('Service Worker kaydedildi:', registration.scope);
 

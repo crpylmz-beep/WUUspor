@@ -9,6 +9,9 @@ concurrency:
   group: wuuspor-toplama
   cancel-in-progress: false
 
+permissions:
+  contents: write
+
 jobs:
   topla:
     runs-on: ubuntu-latest

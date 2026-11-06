@@ -23,7 +23,7 @@ const WUUPush = (() => {
     }
 
     try {
-      swRegistration = await navigator.serviceWorker.register("/sw.js");
+      swRegistration = await navigator.serviceWorker.register("sw.js");
       console.log("Service Worker kayıt edildi:", swRegistration.scope);
     } catch (hata) {
       console.error("Service Worker kayıt hatası:", hata);

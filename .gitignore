@@ -19,9 +19,6 @@ secrets.json
 error.log
 debug.log
 
-# --- Veri klasörü (Actions produce eder, bilgisayarda gerek yok) ---
-/data/*.json
-!/data/.gitkeep
 
 # --- İşletim sistemi ---
 .DS_Store
