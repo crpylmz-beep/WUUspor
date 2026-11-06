@@ -1,7 +1,7 @@
 {
   "toplam": 1,
-  "canli": 0,
-  "guncellendi": "2026-11-06T11:37:49.397238+00:00",
+  "canli": 1,
+  "guncellendi": "2026-11-06T18:29:14.599281+00:00",
   "maclar": [
     {
       "id": "401888256",
@@ -22,15 +22,15 @@
         "ad": "Kasimpasa",
         "kisaAd": "?",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6870.png",
-        "puan": 0,
+        "puan": 2,
         "homeAway": "away"
       },
       "skorEv": 0,
-      "skorDep": 0,
-      "dakika": "0'",
-      "canli": false,
-      "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-06T11:37:49.165746+00:00"
+      "skorDep": 2,
+      "dakika": "70'",
+      "canli": true,
+      "durumKisaDetay": "70'",
+      "guncellendi": "2026-11-06T18:29:14.324880+00:00"
     }
   ]
 }
