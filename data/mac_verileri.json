@@ -1,0 +1,36 @@
+{
+  "toplam": 1,
+  "canli": 0,
+  "guncellendi": "2026-11-06T02:14:37.951619+00:00",
+  "maclar": [
+    {
+      "id": "401888256",
+      "tarih": "2026-11-06T17:00Z",
+      "hafta": null,
+      "turuvaKodu": "tur1",
+      "turuvaAd": "Süper Lig",
+      "evSahibi": {
+        "id": "20070",
+        "ad": "Gaziantep FK",
+        "kisaAd": "?",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20070.png",
+        "puan": 0,
+        "homeAway": "home"
+      },
+      "deplasman": {
+        "id": "6870",
+        "ad": "Kasimpasa",
+        "kisaAd": "?",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6870.png",
+        "puan": 0,
+        "homeAway": "away"
+      },
+      "skorEv": 0,
+      "skorDep": 0,
+      "dakika": "0'",
+      "canli": false,
+      "durumKisaDetay": "Scheduled",
+      "guncellendi": "2026-11-06T02:14:37.639157+00:00"
+    }
+  ]
+}
