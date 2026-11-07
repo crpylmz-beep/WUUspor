@@ -1,5 +1,5 @@
 {
-  "guncellendi": "2026-11-07T10:12:18.381451+00:00",
+  "guncellendi": "2026-11-07T16:32:28.730355+00:00",
   "turler": {
     "tur1": {
       "lig": "tur1",
@@ -79,6 +79,20 @@
               "puan": 19
             },
             {
+              "id": "995",
+              "ad": "Kocaelispor",
+              "kisaAd": "?",
+              "logo": null,
+              "sira": null,
+              "oynanmis": null,
+              "galibiyet": 6,
+              "beraberlik": null,
+              "maglubiyet": 4,
+              "atilanGol": 13,
+              "yenenGol": 9,
+              "puan": 19
+            },
+            {
               "id": "436",
               "ad": "Fenerbahce",
               "kisaAd": "?",
@@ -104,20 +118,6 @@
               "maglubiyet": 4,
               "atilanGol": 21,
               "yenenGol": 16,
-              "puan": 16
-            },
-            {
-              "id": "995",
-              "ad": "Kocaelispor",
-              "kisaAd": "?",
-              "logo": null,
-              "sira": null,
-              "oynanmis": null,
-              "galibiyet": 5,
-              "beraberlik": null,
-              "maglubiyet": 4,
-              "atilanGol": 11,
-              "yenenGol": 9,
               "puan": 16
             },
             {
@@ -213,9 +213,9 @@
               "oynanmis": null,
               "galibiyet": 2,
               "beraberlik": null,
-              "maglubiyet": 6,
+              "maglubiyet": 7,
               "atilanGol": 6,
-              "yenenGol": 13,
+              "yenenGol": 14,
               "puan": 8
             },
             {
@@ -239,12 +239,12 @@
               "logo": null,
               "sira": null,
               "oynanmis": null,
-              "galibiyet": 1,
+              "galibiyet": 2,
               "beraberlik": null,
               "maglubiyet": 8,
-              "atilanGol": 10,
+              "atilanGol": 11,
               "yenenGol": 26,
-              "puan": 4
+              "puan": 7
             },
             {
               "id": "20729",
@@ -255,15 +255,15 @@
               "oynanmis": null,
               "galibiyet": 1,
               "beraberlik": null,
-              "maglubiyet": 9,
+              "maglubiyet": 10,
               "atilanGol": 3,
-              "yenenGol": 28,
+              "yenenGol": 30,
               "puan": 3
             }
           ]
         }
       ],
-      "guncellendi": "2026-11-07T10:12:17.958908+00:00"
+      "guncellendi": "2026-11-07T16:32:28.553716+00:00"
     },
     "ucl": {
       "lig": "ucl",
@@ -779,7 +779,7 @@
           ]
         }
       ],
-      "guncellendi": "2026-11-07T10:12:18.162607+00:00"
+      "guncellendi": "2026-11-07T16:32:28.600820+00:00"
     },
     "uel": {
       "lig": "uel",
@@ -1295,7 +1295,7 @@
           ]
         }
       ],
-      "guncellendi": "2026-11-07T10:12:18.261010+00:00"
+      "guncellendi": "2026-11-07T16:32:28.661458+00:00"
     },
     "uclconf": {
       "lig": "uclconf",
@@ -1811,7 +1811,7 @@
           ]
         }
       ],
-      "guncellendi": "2026-11-07T10:12:18.381221+00:00"
+      "guncellendi": "2026-11-07T16:32:28.730164+00:00"
     }
   }
 }
