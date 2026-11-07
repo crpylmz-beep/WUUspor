@@ -1,7 +1,7 @@
 {
   "toplam": 4,
-  "canli": 2,
-  "guncellendi": "2026-11-07T16:32:28.481905+00:00",
+  "canli": 0,
+  "guncellendi": "2026-11-07T20:29:53.378927+00:00",
   "maclar": [
     {
       "id": "401888371",
@@ -14,7 +14,7 @@
         "ad": "Galatasaray",
         "kisaAd": "?",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/432.png",
-        "puan": 1,
+        "puan": 4,
         "homeAway": "home"
       },
       "deplasman": {
@@ -22,15 +22,15 @@
         "ad": "Amed SFK",
         "kisaAd": "?",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/132335.png",
-        "puan": 0,
+        "puan": 3,
         "homeAway": "away"
       },
-      "skorEv": 1,
-      "skorDep": 0,
-      "dakika": "30'",
-      "canli": true,
-      "durumKisaDetay": "30'",
-      "guncellendi": "2026-11-07T16:32:28.325385+00:00"
+      "skorEv": 4,
+      "skorDep": 3,
+      "dakika": "90'+4'",
+      "canli": false,
+      "durumKisaDetay": "FT",
+      "guncellendi": "2026-11-07T20:29:53.234593+00:00"
     },
     {
       "id": "401888255",
@@ -59,7 +59,7 @@
       "dakika": "90'+3'",
       "canli": false,
       "durumKisaDetay": "FT",
-      "guncellendi": "2026-11-07T16:32:28.325358+00:00"
+      "guncellendi": "2026-11-07T20:29:53.234564+00:00"
     },
     {
       "id": "401888250",
@@ -88,7 +88,7 @@
       "dakika": "90'+7'",
       "canli": false,
       "durumKisaDetay": "FT",
-      "guncellendi": "2026-11-07T16:32:28.325379+00:00"
+      "guncellendi": "2026-11-07T20:29:53.234587+00:00"
     },
     {
       "id": "401888252",
@@ -109,15 +109,15 @@
         "ad": "Istanbul Basaksehir",
         "kisaAd": "?",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7914.png",
-        "puan": 1,
+        "puan": 2,
         "homeAway": "away"
       },
       "skorEv": 1,
-      "skorDep": 1,
-      "dakika": "26'",
-      "canli": true,
-      "durumKisaDetay": "26'",
-      "guncellendi": "2026-11-07T16:32:28.325394+00:00"
+      "skorDep": 2,
+      "dakika": "90'+4'",
+      "canli": false,
+      "durumKisaDetay": "FT",
+      "guncellendi": "2026-11-07T20:29:53.234597+00:00"
     }
   ]
 }
