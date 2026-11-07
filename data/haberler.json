@@ -1,6 +1,6 @@
 {
   "toplam": 1,
-  "guncellendi": "2026-11-07T03:09:14.785886+00:00",
+  "guncellendi": "2026-11-07T10:12:35.463529+00:00",
   "haberler": [
     {
       "baslik": "Fenerbahçe'de Dzeko ve Tadic için neden veda töreni düzenlenmedi? İşte o flaş gerçek",
@@ -14,18 +14,18 @@
       ],
       "kategori": "genel",
       "transferDurumu": "",
-      "guncellendi": "2026-11-07T03:08:58.442952+00:00",
+      "guncellendi": "2026-11-07T10:12:23.201843+00:00",
       "kaynaklar": [
         "Fotomaç Ana Sayfa",
+        "Fotomaç Transfer",
         "Aspor Ana Sayfa",
         "Sabah Spor",
         "Hürriyet Spor"
       ],
-      "kaynakSayisi": 4
+      "kaynakSayisi": 5
     }
   ],
   "hatalar": {
-    "Fotomaç Transfer": "HTTP 403",
     "Sporx": "HTTP 404"
   }
 }
