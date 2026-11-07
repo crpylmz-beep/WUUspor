@@ -1,8 +1,9 @@
 {
   "toplam": 0,
-  "guncellendi": "2026-11-06T23:28:53.634173+00:00",
+  "guncellendi": "2026-11-07T03:09:14.786233+00:00",
   "transferler": [],
   "hatalar": {
+    "Fotomaç Transfer": "HTTP 403",
     "Sporx": "HTTP 404"
   }
 }
