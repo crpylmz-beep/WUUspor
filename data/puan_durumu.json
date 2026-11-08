@@ -1,5 +1,5 @@
 {
-  "guncellendi": "2026-11-08T12:09:25.071583+00:00",
+  "guncellendi": "2026-11-08T17:56:41.985892+00:00",
   "turler": {
     "tur1": {
       "lig": "tur1",
@@ -23,6 +23,20 @@
               "puan": 28
             },
             {
+              "id": "997",
+              "ad": "Trabzonspor",
+              "kisaAd": "?",
+              "logo": null,
+              "sira": null,
+              "oynanmis": null,
+              "galibiyet": 8,
+              "beraberlik": null,
+              "maglubiyet": 2,
+              "atilanGol": 26,
+              "yenenGol": 8,
+              "puan": 25
+            },
+            {
               "id": "132335",
               "ad": "Amed SFK",
               "kisaAd": "?",
@@ -37,20 +51,6 @@
               "puan": 23
             },
             {
-              "id": "997",
-              "ad": "Trabzonspor",
-              "kisaAd": "?",
-              "logo": null,
-              "sira": null,
-              "oynanmis": null,
-              "galibiyet": 7,
-              "beraberlik": null,
-              "maglubiyet": 2,
-              "atilanGol": 24,
-              "yenenGol": 8,
-              "puan": 22
-            },
-            {
               "id": "6870",
               "ad": "Kasimpasa",
               "kisaAd": "?",
@@ -63,6 +63,20 @@
               "atilanGol": 17,
               "yenenGol": 11,
               "puan": 20
+            },
+            {
+              "id": "436",
+              "ad": "Fenerbahce",
+              "kisaAd": "?",
+              "logo": null,
+              "sira": null,
+              "oynanmis": null,
+              "galibiyet": 6,
+              "beraberlik": null,
+              "maglubiyet": 4,
+              "atilanGol": 29,
+              "yenenGol": 10,
+              "puan": 19
             },
             {
               "id": "1895",
@@ -107,20 +121,6 @@
               "puan": 17
             },
             {
-              "id": "436",
-              "ad": "Fenerbahce",
-              "kisaAd": "?",
-              "logo": null,
-              "sira": null,
-              "oynanmis": null,
-              "galibiyet": 5,
-              "beraberlik": null,
-              "maglubiyet": 4,
-              "atilanGol": 24,
-              "yenenGol": 10,
-              "puan": 16
-            },
-            {
               "id": "132334",
               "ad": "Çorum FK",
               "kisaAd": "?",
@@ -129,9 +129,9 @@
               "oynanmis": null,
               "galibiyet": 5,
               "beraberlik": null,
-              "maglubiyet": 4,
+              "maglubiyet": 5,
               "atilanGol": 21,
-              "yenenGol": 16,
+              "yenenGol": 21,
               "puan": 16
             },
             {
@@ -149,6 +149,20 @@
               "puan": 15
             },
             {
+              "id": "7656",
+              "ad": "Caykur Rizespor",
+              "kisaAd": "?",
+              "logo": null,
+              "sira": null,
+              "oynanmis": null,
+              "galibiyet": 4,
+              "beraberlik": null,
+              "maglubiyet": 5,
+              "atilanGol": 13,
+              "yenenGol": 16,
+              "puan": 14
+            },
+            {
               "id": "19267",
               "ad": "Erzurum BB",
               "kisaAd": "?",
@@ -157,9 +171,9 @@
               "oynanmis": null,
               "galibiyet": 4,
               "beraberlik": null,
-              "maglubiyet": 4,
-              "atilanGol": 9,
-              "yenenGol": 15,
+              "maglubiyet": 5,
+              "atilanGol": 10,
+              "yenenGol": 17,
               "puan": 14
             },
             {
@@ -171,24 +185,10 @@
               "oynanmis": null,
               "galibiyet": 3,
               "beraberlik": null,
-              "maglubiyet": 4,
-              "atilanGol": 9,
-              "yenenGol": 16,
-              "puan": 12
-            },
-            {
-              "id": "7656",
-              "ad": "Caykur Rizespor",
-              "kisaAd": "?",
-              "logo": null,
-              "sira": null,
-              "oynanmis": null,
-              "galibiyet": 3,
-              "beraberlik": null,
               "maglubiyet": 5,
-              "atilanGol": 11,
-              "yenenGol": 15,
-              "puan": 11
+              "atilanGol": 9,
+              "yenenGol": 18,
+              "puan": 12
             },
             {
               "id": "996",
@@ -263,7 +263,7 @@
           ]
         }
       ],
-      "guncellendi": "2026-11-08T12:09:24.833373+00:00"
+      "guncellendi": "2026-11-08T17:56:41.301777+00:00"
     },
     "ucl": {
       "lig": "ucl",
@@ -779,7 +779,7 @@
           ]
         }
       ],
-      "guncellendi": "2026-11-08T12:09:24.925407+00:00"
+      "guncellendi": "2026-11-08T17:56:41.487121+00:00"
     },
     "uel": {
       "lig": "uel",
@@ -1295,7 +1295,7 @@
           ]
         }
       ],
-      "guncellendi": "2026-11-08T12:09:24.993340+00:00"
+      "guncellendi": "2026-11-08T17:56:41.868909+00:00"
     },
     "uclconf": {
       "lig": "uclconf",
@@ -1811,7 +1811,7 @@
           ]
         }
       ],
-      "guncellendi": "2026-11-08T12:09:25.071289+00:00"
+      "guncellendi": "2026-11-08T17:56:41.985594+00:00"
     }
   }
 }

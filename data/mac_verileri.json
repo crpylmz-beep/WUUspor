@@ -1,7 +1,7 @@
 {
   "toplam": 4,
-  "canli": 1,
-  "guncellendi": "2026-11-08T12:09:24.751071+00:00",
+  "canli": 0,
+  "guncellendi": "2026-11-08T17:56:41.107051+00:00",
   "maclar": [
     {
       "id": "401888372",
@@ -22,15 +22,15 @@
         "ad": "Fenerbahce",
         "kisaAd": "?",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/436.png",
-        "puan": 0,
+        "puan": 5,
         "homeAway": "away"
       },
       "skorEv": 0,
-      "skorDep": 0,
-      "dakika": "0'",
+      "skorDep": 5,
+      "dakika": "90'+2'",
       "canli": false,
-      "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-08T12:09:24.622719+00:00"
+      "durumKisaDetay": "FT",
+      "guncellendi": "2026-11-08T17:56:40.857469+00:00"
     },
     {
       "id": "401888254",
@@ -51,15 +51,15 @@
         "ad": "Trabzonspor",
         "kisaAd": "?",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/997.png",
-        "puan": 0,
+        "puan": 2,
         "homeAway": "away"
       },
       "skorEv": 0,
-      "skorDep": 0,
-      "dakika": "0'",
+      "skorDep": 2,
+      "dakika": "90'+5'",
       "canli": false,
-      "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-08T12:09:24.622726+00:00"
+      "durumKisaDetay": "FT",
+      "guncellendi": "2026-11-08T17:56:40.857477+00:00"
     },
     {
       "id": "401888251",
@@ -88,7 +88,7 @@
       "dakika": "0'",
       "canli": false,
       "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-08T12:09:24.622730+00:00"
+      "guncellendi": "2026-11-08T17:56:40.857489+00:00"
     },
     {
       "id": "401888253",
@@ -114,10 +114,10 @@
       },
       "skorEv": 2,
       "skorDep": 1,
-      "dakika": "81'",
-      "canli": true,
-      "durumKisaDetay": "81'",
-      "guncellendi": "2026-11-08T12:09:24.622698+00:00"
+      "dakika": "90'+4'",
+      "canli": false,
+      "durumKisaDetay": "FT",
+      "guncellendi": "2026-11-08T17:56:40.857441+00:00"
     }
   ]
 }
