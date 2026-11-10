@@ -1,8 +1,9 @@
 {
   "toplam": 0,
-  "guncellendi": "2026-11-10T17:46:59.439152+00:00",
+  "guncellendi": "2026-11-10T22:35:59.838142+00:00",
   "transferler": [],
   "hatalar": {
-    "Sporx": "HTTP 404"
+    "Sporx": "HTTP 404",
+    "Hürriyet Spor": "Geçersiz RSS"
   }
 }
