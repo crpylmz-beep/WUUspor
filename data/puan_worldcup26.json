@@ -3,6 +3,5 @@
   "ad": "Süper Lig",
   "kaynak": "WorldCup26",
   "gruplar": [],
-  "hata": "HTTPSConnectionPool(host='worldcup26.ir', port=443): Max retries exceeded with url: /get/soccer/tur.1/standings (Caused by ConnectTimeoutError(<HTTPSConnection(host='worldcup26.ir', port=443) at 0x7faed2248f20>, 'Connection to worldcup26.ir timed out. (connect timeout=15)'))",
-  "guncellendi": "2026-11-10T22:35:42.307950+00:00"
+  "guncellendi": "2026-11-11T02:14:51.495780+00:00"
 }
