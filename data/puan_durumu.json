@@ -1,5 +1,5 @@
 {
-  "guncellendi": "2026-11-21T12:49:44.450410+00:00",
+  "guncellendi": "2026-11-21T19:52:35.370225+00:00",
   "turler": {
     "tur1": {
       "lig": "tur1",
@@ -15,12 +15,12 @@
               "logo": null,
               "sira": null,
               "oynanmis": null,
-              "galibiyet": 9,
+              "galibiyet": 10,
               "beraberlik": null,
               "maglubiyet": 1,
-              "atilanGol": 27,
-              "yenenGol": 15,
-              "puan": 28
+              "atilanGol": 29,
+              "yenenGol": 16,
+              "puan": 31
             },
             {
               "id": "997",
@@ -45,9 +45,9 @@
               "oynanmis": null,
               "galibiyet": 7,
               "beraberlik": null,
-              "maglubiyet": 2,
+              "maglubiyet": 3,
               "atilanGol": 28,
-              "yenenGol": 15,
+              "yenenGol": 17,
               "puan": 23
             },
             {
@@ -65,6 +65,20 @@
               "puan": 22
             },
             {
+              "id": "436",
+              "ad": "Fenerbahce",
+              "kisaAd": "?",
+              "logo": null,
+              "sira": null,
+              "oynanmis": null,
+              "galibiyet": 6,
+              "beraberlik": null,
+              "maglubiyet": 4,
+              "atilanGol": 31,
+              "yenenGol": 12,
+              "puan": 20
+            },
+            {
               "id": "6870",
               "ad": "Kasimpasa",
               "kisaAd": "?",
@@ -79,20 +93,6 @@
               "puan": 20
             },
             {
-              "id": "436",
-              "ad": "Fenerbahce",
-              "kisaAd": "?",
-              "logo": null,
-              "sira": null,
-              "oynanmis": null,
-              "galibiyet": 6,
-              "beraberlik": null,
-              "maglubiyet": 4,
-              "atilanGol": 29,
-              "yenenGol": 10,
-              "puan": 19
-            },
-            {
               "id": "995",
               "ad": "Kocaelispor",
               "kisaAd": "?",
@@ -102,9 +102,9 @@
               "galibiyet": 6,
               "beraberlik": null,
               "maglubiyet": 4,
-              "atilanGol": 13,
-              "yenenGol": 9,
-              "puan": 19
+              "atilanGol": 15,
+              "yenenGol": 11,
+              "puan": 20
             },
             {
               "id": "7914",
@@ -118,6 +118,20 @@
               "maglubiyet": 4,
               "atilanGol": 19,
               "yenenGol": 17,
+              "puan": 17
+            },
+            {
+              "id": "7656",
+              "ad": "Caykur Rizespor",
+              "kisaAd": "?",
+              "logo": null,
+              "sira": null,
+              "oynanmis": null,
+              "galibiyet": 5,
+              "beraberlik": null,
+              "maglubiyet": 5,
+              "atilanGol": 15,
+              "yenenGol": 16,
               "puan": 17
             },
             {
@@ -147,20 +161,6 @@
               "atilanGol": 22,
               "yenenGol": 19,
               "puan": 15
-            },
-            {
-              "id": "7656",
-              "ad": "Caykur Rizespor",
-              "kisaAd": "?",
-              "logo": null,
-              "sira": null,
-              "oynanmis": null,
-              "galibiyet": 4,
-              "beraberlik": null,
-              "maglubiyet": 5,
-              "atilanGol": 13,
-              "yenenGol": 16,
-              "puan": 14
             },
             {
               "id": "19267",
@@ -241,9 +241,9 @@
               "oynanmis": null,
               "galibiyet": 2,
               "beraberlik": null,
-              "maglubiyet": 8,
-              "atilanGol": 11,
-              "yenenGol": 26,
+              "maglubiyet": 9,
+              "atilanGol": 12,
+              "yenenGol": 28,
               "puan": 7
             },
             {
@@ -263,7 +263,7 @@
           ]
         }
       ],
-      "guncellendi": "2026-11-21T12:49:44.237161+00:00"
+      "guncellendi": "2026-11-21T19:52:35.235602+00:00"
     },
     "ucl": {
       "lig": "ucl",
@@ -779,7 +779,7 @@
           ]
         }
       ],
-      "guncellendi": "2026-11-21T12:49:44.315977+00:00"
+      "guncellendi": "2026-11-21T19:52:35.278356+00:00"
     },
     "uel": {
       "lig": "uel",
@@ -1295,7 +1295,7 @@
           ]
         }
       ],
-      "guncellendi": "2026-11-21T12:49:44.378370+00:00"
+      "guncellendi": "2026-11-21T19:52:35.329413+00:00"
     },
     "uclconf": {
       "lig": "uclconf",
@@ -1811,7 +1811,7 @@
           ]
         }
       ],
-      "guncellendi": "2026-11-21T12:49:44.450161+00:00"
+      "guncellendi": "2026-11-21T19:52:35.369951+00:00"
     }
   }
 }
