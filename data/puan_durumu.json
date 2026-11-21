@@ -1,5 +1,5 @@
 {
-  "guncellendi": "2026-11-21T04:12:25.671250+00:00",
+  "guncellendi": "2026-11-21T12:49:44.450410+00:00",
   "turler": {
     "tur1": {
       "lig": "tur1",
@@ -177,6 +177,20 @@
               "puan": 14
             },
             {
+              "id": "996",
+              "ad": "Genclerbirligi",
+              "kisaAd": "?",
+              "logo": null,
+              "sira": null,
+              "oynanmis": null,
+              "galibiyet": 4,
+              "beraberlik": null,
+              "maglubiyet": 6,
+              "atilanGol": 13,
+              "yenenGol": 21,
+              "puan": 14
+            },
+            {
               "id": "9078",
               "ad": "Alanyaspor",
               "kisaAd": "?",
@@ -189,20 +203,6 @@
               "atilanGol": 9,
               "yenenGol": 18,
               "puan": 12
-            },
-            {
-              "id": "996",
-              "ad": "Genclerbirligi",
-              "kisaAd": "?",
-              "logo": null,
-              "sira": null,
-              "oynanmis": null,
-              "galibiyet": 3,
-              "beraberlik": null,
-              "maglubiyet": 6,
-              "atilanGol": 12,
-              "yenenGol": 21,
-              "puan": 11
             },
             {
               "id": "7648",
@@ -227,9 +227,9 @@
               "oynanmis": null,
               "galibiyet": 2,
               "beraberlik": null,
-              "maglubiyet": 7,
+              "maglubiyet": 8,
               "atilanGol": 9,
-              "yenenGol": 19,
+              "yenenGol": 20,
               "puan": 8
             },
             {
@@ -263,7 +263,7 @@
           ]
         }
       ],
-      "guncellendi": "2026-11-21T04:12:25.312030+00:00"
+      "guncellendi": "2026-11-21T12:49:44.237161+00:00"
     },
     "ucl": {
       "lig": "ucl",
@@ -779,7 +779,7 @@
           ]
         }
       ],
-      "guncellendi": "2026-11-21T04:12:25.523632+00:00"
+      "guncellendi": "2026-11-21T12:49:44.315977+00:00"
     },
     "uel": {
       "lig": "uel",
@@ -1295,7 +1295,7 @@
           ]
         }
       ],
-      "guncellendi": "2026-11-21T04:12:25.610134+00:00"
+      "guncellendi": "2026-11-21T12:49:44.378370+00:00"
     },
     "uclconf": {
       "lig": "uclconf",
@@ -1811,7 +1811,7 @@
           ]
         }
       ],
-      "guncellendi": "2026-11-21T04:12:25.671064+00:00"
+      "guncellendi": "2026-11-21T12:49:44.450161+00:00"
     }
   }
 }
