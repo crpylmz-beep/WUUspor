@@ -1,7 +1,7 @@
 {
   "toplam": 4,
   "canli": 0,
-  "guncellendi": "2026-11-22T07:06:20.826786+00:00",
+  "guncellendi": "2026-11-22T15:16:00.529305+00:00",
   "maclar": [
     {
       "id": "401888246",
@@ -14,7 +14,7 @@
         "ad": "Konyaspor",
         "kisaAd": "?",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7648.png",
-        "puan": 0,
+        "puan": 2,
         "homeAway": "home"
       },
       "deplasman": {
@@ -22,15 +22,15 @@
         "ad": "Besiktas",
         "kisaAd": "?",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1895.png",
-        "puan": 0,
+        "puan": 4,
         "homeAway": "away"
       },
-      "skorEv": 0,
-      "skorDep": 0,
-      "dakika": "0'",
+      "skorEv": 2,
+      "skorDep": 4,
+      "dakika": "90'+6'",
       "canli": false,
-      "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-22T07:06:20.545962+00:00"
+      "durumKisaDetay": "FT",
+      "guncellendi": "2026-11-22T15:16:00.228279+00:00"
     },
     {
       "id": "401888249",
@@ -59,7 +59,7 @@
       "dakika": "0'",
       "canli": false,
       "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-22T07:06:20.545965+00:00"
+      "guncellendi": "2026-11-22T15:16:00.228286+00:00"
     },
     {
       "id": "401888243",
@@ -80,15 +80,15 @@
         "ad": "Goztepe",
         "kisaAd": "?",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/789.png",
-        "puan": 0,
+        "puan": 1,
         "homeAway": "away"
       },
       "skorEv": 0,
-      "skorDep": 0,
-      "dakika": "0'",
+      "skorDep": 1,
+      "dakika": "90'+4'",
       "canli": false,
-      "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-22T07:06:20.545940+00:00"
+      "durumKisaDetay": "FT",
+      "guncellendi": "2026-11-22T15:16:00.228240+00:00"
     },
     {
       "id": "401888248",
@@ -101,7 +101,7 @@
         "ad": "Kasimpasa",
         "kisaAd": "?",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6870.png",
-        "puan": 0,
+        "puan": 2,
         "homeAway": "home"
       },
       "deplasman": {
@@ -109,15 +109,15 @@
         "ad": "Alanyaspor",
         "kisaAd": "?",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9078.png",
-        "puan": 0,
+        "puan": 1,
         "homeAway": "away"
       },
-      "skorEv": 0,
-      "skorDep": 0,
-      "dakika": "0'",
+      "skorEv": 2,
+      "skorDep": 1,
+      "dakika": "90'+6'",
       "canli": false,
-      "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-22T07:06:20.545956+00:00"
+      "durumKisaDetay": "FT",
+      "guncellendi": "2026-11-22T15:16:00.228269+00:00"
     }
   ]
 }
