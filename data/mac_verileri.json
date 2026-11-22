@@ -1,7 +1,7 @@
 {
   "toplam": 4,
   "canli": 0,
-  "guncellendi": "2026-11-22T00:12:48.963651+00:00",
+  "guncellendi": "2026-11-22T07:06:20.826786+00:00",
   "maclar": [
     {
       "id": "401888246",
@@ -30,7 +30,7 @@
       "dakika": "0'",
       "canli": false,
       "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-22T00:12:48.818175+00:00"
+      "guncellendi": "2026-11-22T07:06:20.545962+00:00"
     },
     {
       "id": "401888249",
@@ -59,7 +59,7 @@
       "dakika": "0'",
       "canli": false,
       "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-22T00:12:48.818183+00:00"
+      "guncellendi": "2026-11-22T07:06:20.545965+00:00"
     },
     {
       "id": "401888243",
@@ -88,7 +88,7 @@
       "dakika": "0'",
       "canli": false,
       "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-22T00:12:48.818122+00:00"
+      "guncellendi": "2026-11-22T07:06:20.545940+00:00"
     },
     {
       "id": "401888248",
@@ -117,7 +117,7 @@
       "dakika": "0'",
       "canli": false,
       "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-22T00:12:48.818159+00:00"
+      "guncellendi": "2026-11-22T07:06:20.545956+00:00"
     }
   ]
 }
