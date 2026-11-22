@@ -1,5 +1,5 @@
 {
-  "guncellendi": "2026-11-22T15:16:01.229228+00:00",
+  "guncellendi": "2026-11-22T21:07:28.559631+00:00",
   "turler": {
     "tur1": {
       "lig": "tur1",
@@ -29,12 +29,12 @@
               "logo": null,
               "sira": null,
               "oynanmis": null,
-              "galibiyet": 8,
+              "galibiyet": 9,
               "beraberlik": null,
               "maglubiyet": 2,
-              "atilanGol": 26,
+              "atilanGol": 27,
               "yenenGol": 8,
-              "puan": 25
+              "puan": 28
             },
             {
               "id": "1895",
@@ -255,15 +255,15 @@
               "oynanmis": null,
               "galibiyet": 1,
               "beraberlik": null,
-              "maglubiyet": 10,
+              "maglubiyet": 11,
               "atilanGol": 3,
-              "yenenGol": 30,
+              "yenenGol": 31,
               "puan": 3
             }
           ]
         }
       ],
-      "guncellendi": "2026-11-22T15:16:00.676100+00:00"
+      "guncellendi": "2026-11-22T21:07:28.237048+00:00"
     },
     "ucl": {
       "lig": "ucl",
@@ -779,7 +779,7 @@
           ]
         }
       ],
-      "guncellendi": "2026-11-22T15:16:00.896042+00:00"
+      "guncellendi": "2026-11-22T21:07:28.325348+00:00"
     },
     "uel": {
       "lig": "uel",
@@ -1295,7 +1295,7 @@
           ]
         }
       ],
-      "guncellendi": "2026-11-22T15:16:01.063231+00:00"
+      "guncellendi": "2026-11-22T21:07:28.422486+00:00"
     },
     "uclconf": {
       "lig": "uclconf",
@@ -1811,7 +1811,7 @@
           ]
         }
       ],
-      "guncellendi": "2026-11-22T15:16:01.229027+00:00"
+      "guncellendi": "2026-11-22T21:07:28.559447+00:00"
     }
   }
 }
