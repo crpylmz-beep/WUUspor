@@ -1,7 +1,7 @@
 {
   "toplam": 1,
   "canli": 0,
-  "guncellendi": "2026-11-22T21:07:28.146396+00:00",
+  "guncellendi": "2026-11-23T01:42:08.751552+00:00",
   "maclar": [
     {
       "id": "401888370",
@@ -30,7 +30,7 @@
       "dakika": "0'",
       "canli": false,
       "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-22T21:07:28.027479+00:00"
+      "guncellendi": "2026-11-23T01:42:08.389132+00:00"
     }
   ]
 }
