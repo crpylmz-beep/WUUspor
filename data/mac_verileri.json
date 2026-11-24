@@ -1,7 +1,7 @@
 {
   "toplam": 9,
   "canli": 0,
-  "guncellendi": "2026-11-24T05:53:36.740856+00:00",
+  "guncellendi": "2026-11-24T17:20:22.201258+00:00",
   "maclar": [
     {
       "id": "401915300",
@@ -30,7 +30,7 @@
       "dakika": "0'",
       "canli": false,
       "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-24T05:53:36.573732+00:00"
+      "guncellendi": "2026-11-24T17:20:22.095786+00:00"
     },
     {
       "id": "401915380",
@@ -59,7 +59,7 @@
       "dakika": "0'",
       "canli": false,
       "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-24T05:53:36.573714+00:00"
+      "guncellendi": "2026-11-24T17:20:22.095765+00:00"
     },
     {
       "id": "401915295",
@@ -88,7 +88,7 @@
       "dakika": "0'",
       "canli": false,
       "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-24T05:53:36.573739+00:00"
+      "guncellendi": "2026-11-24T17:20:22.095791+00:00"
     },
     {
       "id": "401915296",
@@ -117,7 +117,7 @@
       "dakika": "0'",
       "canli": false,
       "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-24T05:53:36.573744+00:00"
+      "guncellendi": "2026-11-24T17:20:22.095794+00:00"
     },
     {
       "id": "401915294",
@@ -146,7 +146,7 @@
       "dakika": "0'",
       "canli": false,
       "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-24T05:53:36.573748+00:00"
+      "guncellendi": "2026-11-24T17:20:22.095797+00:00"
     },
     {
       "id": "401915379",
@@ -175,7 +175,7 @@
       "dakika": "0'",
       "canli": false,
       "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-24T05:53:36.573753+00:00"
+      "guncellendi": "2026-11-24T17:20:22.095800+00:00"
     },
     {
       "id": "401915299",
@@ -204,7 +204,7 @@
       "dakika": "0'",
       "canli": false,
       "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-24T05:53:36.573758+00:00"
+      "guncellendi": "2026-11-24T17:20:22.095802+00:00"
     },
     {
       "id": "401915298",
@@ -233,7 +233,7 @@
       "dakika": "0'",
       "canli": false,
       "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-24T05:53:36.573762+00:00"
+      "guncellendi": "2026-11-24T17:20:22.095805+00:00"
     },
     {
       "id": "401915297",
@@ -262,7 +262,7 @@
       "dakika": "0'",
       "canli": false,
       "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-24T05:53:36.573771+00:00"
+      "guncellendi": "2026-11-24T17:20:22.095810+00:00"
     }
   ]
 }
