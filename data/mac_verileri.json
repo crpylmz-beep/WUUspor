@@ -1,7 +1,7 @@
 {
   "toplam": 9,
-  "canli": 0,
-  "guncellendi": "2026-11-25T10:28:34.235275+00:00",
+  "canli": 7,
+  "guncellendi": "2026-11-25T20:08:00.909048+00:00",
   "maclar": [
     {
       "id": "401915375",
@@ -27,10 +27,10 @@
       },
       "skorEv": 0,
       "skorDep": 0,
-      "dakika": "0'",
-      "canli": false,
-      "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-25T10:28:33.997391+00:00"
+      "dakika": "6'",
+      "canli": true,
+      "durumKisaDetay": "6'",
+      "guncellendi": "2026-11-25T20:08:00.807904+00:00"
     },
     {
       "id": "401915378",
@@ -43,7 +43,7 @@
         "ad": "Sabah FK",
         "kisaAd": "?",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21922.png",
-        "puan": 0,
+        "puan": 1,
         "homeAway": "home"
       },
       "deplasman": {
@@ -51,15 +51,15 @@
         "ad": "Barcelona",
         "kisaAd": "?",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
-        "puan": 0,
+        "puan": 4,
         "homeAway": "away"
       },
-      "skorEv": 0,
-      "skorDep": 0,
-      "dakika": "0'",
+      "skorEv": 1,
+      "skorDep": 4,
+      "dakika": "90'+2'",
       "canli": false,
-      "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-25T10:28:33.997331+00:00"
+      "durumKisaDetay": "FT",
+      "guncellendi": "2026-11-25T20:08:00.807862+00:00"
     },
     {
       "id": "401915293",
@@ -80,15 +80,15 @@
         "ad": "Villarreal",
         "kisaAd": "?",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png",
-        "puan": 0,
+        "puan": 1,
         "homeAway": "away"
       },
       "skorEv": 0,
-      "skorDep": 0,
-      "dakika": "0'",
+      "skorDep": 1,
+      "dakika": "90'+5'",
       "canli": false,
-      "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-25T10:28:33.997372+00:00"
+      "durumKisaDetay": "FT",
+      "guncellendi": "2026-11-25T20:08:00.807883+00:00"
     },
     {
       "id": "401915291",
@@ -114,10 +114,10 @@
       },
       "skorEv": 0,
       "skorDep": 0,
-      "dakika": "0'",
-      "canli": false,
-      "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-25T10:28:33.997377+00:00"
+      "dakika": "7'",
+      "canli": true,
+      "durumKisaDetay": "7'",
+      "guncellendi": "2026-11-25T20:08:00.807888+00:00"
     },
     {
       "id": "401915292",
@@ -143,10 +143,10 @@
       },
       "skorEv": 0,
       "skorDep": 0,
-      "dakika": "0'",
-      "canli": false,
-      "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-25T10:28:33.997380+00:00"
+      "dakika": "6'",
+      "canli": true,
+      "durumKisaDetay": "6'",
+      "guncellendi": "2026-11-25T20:08:00.807892+00:00"
     },
     {
       "id": "401915376",
@@ -172,10 +172,10 @@
       },
       "skorEv": 0,
       "skorDep": 0,
-      "dakika": "0'",
-      "canli": false,
-      "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-25T10:28:33.997383+00:00"
+      "dakika": "7'",
+      "canli": true,
+      "durumKisaDetay": "7'",
+      "guncellendi": "2026-11-25T20:08:00.807895+00:00"
     },
     {
       "id": "401915377",
@@ -201,10 +201,10 @@
       },
       "skorEv": 0,
       "skorDep": 0,
-      "dakika": "0'",
-      "canli": false,
-      "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-25T10:28:33.997386+00:00"
+      "dakika": "7'",
+      "canli": true,
+      "durumKisaDetay": "7'",
+      "guncellendi": "2026-11-25T20:08:00.807898+00:00"
     },
     {
       "id": "401915374",
@@ -225,15 +225,15 @@
         "ad": "AS Roma",
         "kisaAd": "?",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png",
-        "puan": 0,
+        "puan": 1,
         "homeAway": "away"
       },
       "skorEv": 0,
-      "skorDep": 0,
-      "dakika": "0'",
-      "canli": false,
-      "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-25T10:28:33.997388+00:00"
+      "skorDep": 1,
+      "dakika": "6'",
+      "canli": true,
+      "durumKisaDetay": "6'",
+      "guncellendi": "2026-11-25T20:08:00.807901+00:00"
     },
     {
       "id": "401915373",
@@ -259,10 +259,10 @@
       },
       "skorEv": 0,
       "skorDep": 0,
-      "dakika": "0'",
-      "canli": false,
-      "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-25T10:28:33.997393+00:00"
+      "dakika": "8'",
+      "canli": true,
+      "durumKisaDetay": "8'",
+      "guncellendi": "2026-11-25T20:08:00.807910+00:00"
     }
   ]
 }
