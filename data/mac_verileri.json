@@ -1,27 +1,27 @@
 {
   "toplam": 9,
   "canli": 0,
-  "guncellendi": "2026-11-24T17:20:22.201258+00:00",
+  "guncellendi": "2026-11-25T01:31:39.736955+00:00",
   "maclar": [
     {
-      "id": "401915300",
-      "tarih": "2026-11-24T17:45Z",
+      "id": "401915375",
+      "tarih": "2026-11-25T20:00Z",
       "hafta": null,
       "turuvaKodu": "ucl",
       "turuvaAd": "Şampiyonlar Ligi",
       "evSahibi": {
-        "id": "432",
-        "ad": "Galatasaray",
+        "id": "493",
+        "ad": "Shakhtar Donetsk",
         "kisaAd": "?",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/432.png",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/493.png",
         "puan": 0,
         "homeAway": "home"
       },
       "deplasman": {
-        "id": "362",
-        "ad": "Aston Villa",
+        "id": "436",
+        "ad": "Fenerbahce",
         "kisaAd": "?",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/436.png",
         "puan": 0,
         "homeAway": "away"
       },
@@ -30,27 +30,27 @@
       "dakika": "0'",
       "canli": false,
       "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-24T17:20:22.095786+00:00"
+      "guncellendi": "2026-11-25T01:31:39.557542+00:00"
     },
     {
-      "id": "401915380",
-      "tarih": "2026-11-24T17:45Z",
+      "id": "401915378",
+      "tarih": "2026-11-25T17:45Z",
       "hafta": null,
       "turuvaKodu": "ucl",
       "turuvaAd": "Şampiyonlar Ligi",
       "evSahibi": {
-        "id": "2980",
-        "ad": "Bodo/Glimt",
+        "id": "21922",
+        "ad": "Sabah FK",
         "kisaAd": "?",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2980.png",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21922.png",
         "puan": 0,
         "homeAway": "home"
       },
       "deplasman": {
-        "id": "4411",
-        "ad": "LASK Linz",
+        "id": "83",
+        "ad": "Barcelona",
         "kisaAd": "?",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4411.png",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
         "puan": 0,
         "homeAway": "away"
       },
@@ -59,27 +59,27 @@
       "dakika": "0'",
       "canli": false,
       "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-24T17:20:22.095765+00:00"
+      "guncellendi": "2026-11-25T01:31:39.557490+00:00"
     },
     {
-      "id": "401915295",
-      "tarih": "2026-11-24T20:00Z",
+      "id": "401915293",
+      "tarih": "2026-11-25T17:45Z",
       "hafta": null,
       "turuvaKodu": "ucl",
       "turuvaAd": "Şampiyonlar Ligi",
       "evSahibi": {
-        "id": "359",
-        "ad": "Arsenal",
+        "id": "494",
+        "ad": "Slavia Prague",
         "kisaAd": "?",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/494.png",
         "puan": 0,
         "homeAway": "home"
       },
       "deplasman": {
-        "id": "124",
-        "ad": "Borussia Dortmund",
+        "id": "102",
+        "ad": "Villarreal",
         "kisaAd": "?",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png",
         "puan": 0,
         "homeAway": "away"
       },
@@ -88,27 +88,27 @@
       "dakika": "0'",
       "canli": false,
       "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-24T17:20:22.095791+00:00"
+      "guncellendi": "2026-11-25T01:31:39.557513+00:00"
     },
     {
-      "id": "401915296",
-      "tarih": "2026-11-24T20:00Z",
+      "id": "401915291",
+      "tarih": "2026-11-25T20:00Z",
       "hafta": null,
       "turuvaKodu": "ucl",
       "turuvaAd": "Şampiyonlar Ligi",
       "evSahibi": {
-        "id": "2572",
-        "ad": "Como",
+        "id": "1068",
+        "ad": "Atlético Madrid",
         "kisaAd": "?",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
         "puan": 0,
         "homeAway": "home"
       },
       "deplasman": {
-        "id": "887",
-        "ad": "AEK Athens",
+        "id": "510",
+        "ad": "Viking FK",
         "kisaAd": "?",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/887.png",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/510.png",
         "puan": 0,
         "homeAway": "away"
       },
@@ -117,27 +117,27 @@
       "dakika": "0'",
       "canli": false,
       "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-24T17:20:22.095794+00:00"
+      "guncellendi": "2026-11-25T01:31:39.557520+00:00"
     },
     {
-      "id": "401915294",
-      "tarih": "2026-11-24T20:00Z",
+      "id": "401915292",
+      "tarih": "2026-11-25T20:00Z",
       "hafta": null,
       "turuvaKodu": "ucl",
       "turuvaAd": "Şampiyonlar Ligi",
       "evSahibi": {
-        "id": "142",
-        "ad": "Feyenoord Rotterdam",
+        "id": "570",
+        "ad": "Club Brugge",
         "kisaAd": "?",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/142.png",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/570.png",
         "puan": 0,
         "homeAway": "home"
       },
       "deplasman": {
-        "id": "437",
-        "ad": "FC Porto",
+        "id": "364",
+        "ad": "Liverpool",
         "kisaAd": "?",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/437.png",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png",
         "puan": 0,
         "homeAway": "away"
       },
@@ -146,27 +146,27 @@
       "dakika": "0'",
       "canli": false,
       "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-24T17:20:22.095797+00:00"
+      "guncellendi": "2026-11-25T01:31:39.557525+00:00"
     },
     {
-      "id": "401915379",
-      "tarih": "2026-11-24T20:00Z",
+      "id": "401915376",
+      "tarih": "2026-11-25T20:00Z",
       "hafta": null,
       "turuvaKodu": "ucl",
       "turuvaAd": "Şampiyonlar Ligi",
       "evSahibi": {
-        "id": "382",
-        "ad": "Manchester City",
+        "id": "110",
+        "ad": "Internazionale",
         "kisaAd": "?",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png",
         "puan": 0,
         "homeAway": "home"
       },
       "deplasman": {
-        "id": "114",
-        "ad": "Napoli",
+        "id": "134",
+        "ad": "VfB Stuttgart",
         "kisaAd": "?",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png",
         "puan": 0,
         "homeAway": "away"
       },
@@ -175,27 +175,27 @@
       "dakika": "0'",
       "canli": false,
       "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-24T17:20:22.095800+00:00"
+      "guncellendi": "2026-11-25T01:31:39.557529+00:00"
     },
     {
-      "id": "401915299",
-      "tarih": "2026-11-24T20:00Z",
+      "id": "401915377",
+      "tarih": "2026-11-25T20:00Z",
       "hafta": null,
       "turuvaKodu": "ucl",
       "turuvaAd": "Şampiyonlar Ligi",
       "evSahibi": {
-        "id": "11420",
-        "ad": "RB Leipzig",
+        "id": "166",
+        "ad": "Lille",
         "kisaAd": "?",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11420.png",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png",
         "puan": 0,
         "homeAway": "home"
       },
       "deplasman": {
-        "id": "175",
-        "ad": "Lens",
+        "id": "132",
+        "ad": "Bayern Munich",
         "kisaAd": "?",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png",
         "puan": 0,
         "homeAway": "away"
       },
@@ -204,27 +204,27 @@
       "dakika": "0'",
       "canli": false,
       "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-24T17:20:22.095802+00:00"
+      "guncellendi": "2026-11-25T01:31:39.557533+00:00"
     },
     {
-      "id": "401915298",
-      "tarih": "2026-11-24T20:00Z",
+      "id": "401915374",
+      "tarih": "2026-11-25T20:00Z",
       "hafta": null,
       "turuvaKodu": "ucl",
       "turuvaAd": "Şampiyonlar Ligi",
       "evSahibi": {
-        "id": "86",
-        "ad": "Real Madrid",
+        "id": "160",
+        "ad": "Paris Saint-Germain",
         "kisaAd": "?",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
         "puan": 0,
         "homeAway": "home"
       },
       "deplasman": {
-        "id": "148",
-        "ad": "PSV Eindhoven",
+        "id": "104",
+        "ad": "AS Roma",
         "kisaAd": "?",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/148.png",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png",
         "puan": 0,
         "homeAway": "away"
       },
@@ -233,27 +233,27 @@
       "dakika": "0'",
       "canli": false,
       "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-24T17:20:22.095805+00:00"
+      "guncellendi": "2026-11-25T01:31:39.557538+00:00"
     },
     {
-      "id": "401915297",
-      "tarih": "2026-11-24T20:00Z",
+      "id": "401915373",
+      "tarih": "2026-11-25T20:00Z",
       "hafta": null,
       "turuvaKodu": "ucl",
       "turuvaAd": "Şampiyonlar Ligi",
       "evSahibi": {
-        "id": "521",
-        "ad": "Slovan Bratislava",
+        "id": "2250",
+        "ad": "Sporting CP",
         "kisaAd": "?",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/521.png",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2250.png",
         "puan": 0,
         "homeAway": "home"
       },
       "deplasman": {
-        "id": "244",
-        "ad": "Real Betis",
+        "id": "360",
+        "ad": "Manchester United",
         "kisaAd": "?",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png",
         "puan": 0,
         "homeAway": "away"
       },
@@ -262,7 +262,7 @@
       "dakika": "0'",
       "canli": false,
       "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-24T17:20:22.095810+00:00"
+      "guncellendi": "2026-11-25T01:31:39.557546+00:00"
     }
   ]
 }

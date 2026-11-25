@@ -1,5 +1,5 @@
 {
-  "guncellendi": "2026-11-24T17:20:22.495382+00:00",
+  "guncellendi": "2026-11-25T01:31:40.018639+00:00",
   "turler": {
     "tur1": {
       "lig": "tur1",
@@ -263,7 +263,7 @@
           ]
         }
       ],
-      "guncellendi": "2026-11-24T17:20:22.248565+00:00"
+      "guncellendi": "2026-11-25T01:31:39.813345+00:00"
     },
     "ucl": {
       "lig": "ucl",
@@ -272,6 +272,20 @@
           "ad": "overall",
           "sira": null,
           "takimlar": [
+            {
+              "id": "86",
+              "ad": "Real Madrid",
+              "kisaAd": "?",
+              "logo": null,
+              "sira": null,
+              "oynanmis": null,
+              "galibiyet": 5,
+              "beraberlik": null,
+              "maglubiyet": null,
+              "atilanGol": 18,
+              "yenenGol": 8,
+              "puan": 15
+            },
             {
               "id": "160",
               "ad": "Paris Saint-Germain",
@@ -287,17 +301,31 @@
               "puan": 12
             },
             {
-              "id": "86",
-              "ad": "Real Madrid",
+              "id": "2572",
+              "ad": "Como",
               "kisaAd": "?",
               "logo": null,
               "sira": null,
               "oynanmis": null,
               "galibiyet": 4,
               "beraberlik": null,
-              "maglubiyet": null,
-              "atilanGol": 13,
-              "yenenGol": 7,
+              "maglubiyet": 1,
+              "atilanGol": 20,
+              "yenenGol": 6,
+              "puan": 12
+            },
+            {
+              "id": "244",
+              "ad": "Real Betis",
+              "kisaAd": "?",
+              "logo": null,
+              "sira": null,
+              "oynanmis": null,
+              "galibiyet": 4,
+              "beraberlik": null,
+              "maglubiyet": 1,
+              "atilanGol": 10,
+              "yenenGol": 6,
               "puan": 12
             },
             {
@@ -310,13 +338,13 @@
               "galibiyet": 3,
               "beraberlik": null,
               "maglubiyet": null,
-              "atilanGol": 8,
-              "yenenGol": 3,
-              "puan": 10
+              "atilanGol": 9,
+              "yenenGol": 4,
+              "puan": 11
             },
             {
-              "id": "2572",
-              "ad": "Como",
+              "id": "382",
+              "ad": "Manchester City",
               "kisaAd": "?",
               "logo": null,
               "sira": null,
@@ -324,9 +352,23 @@
               "galibiyet": 3,
               "beraberlik": null,
               "maglubiyet": 1,
-              "atilanGol": 19,
+              "atilanGol": 14,
+              "yenenGol": 9,
+              "puan": 10
+            },
+            {
+              "id": "124",
+              "ad": "Borussia Dortmund",
+              "kisaAd": "?",
+              "logo": null,
+              "sira": null,
+              "oynanmis": null,
+              "galibiyet": 3,
+              "beraberlik": null,
+              "maglubiyet": 1,
+              "atilanGol": 8,
               "yenenGol": 6,
-              "puan": 9
+              "puan": 10
             },
             {
               "id": "83",
@@ -351,21 +393,7 @@
               "oynanmis": null,
               "galibiyet": 3,
               "beraberlik": null,
-              "maglubiyet": 1,
-              "atilanGol": 12,
-              "yenenGol": 6,
-              "puan": 9
-            },
-            {
-              "id": "382",
-              "ad": "Manchester City",
-              "kisaAd": "?",
-              "logo": null,
-              "sira": null,
-              "oynanmis": null,
-              "galibiyet": 3,
-              "beraberlik": null,
-              "maglubiyet": 1,
+              "maglubiyet": 2,
               "atilanGol": 12,
               "yenenGol": 7,
               "puan": 9
@@ -413,31 +441,17 @@
               "puan": 9
             },
             {
-              "id": "244",
-              "ad": "Real Betis",
+              "id": "432",
+              "ad": "Galatasaray",
               "kisaAd": "?",
               "logo": null,
               "sira": null,
               "oynanmis": null,
               "galibiyet": 3,
               "beraberlik": null,
-              "maglubiyet": 1,
-              "atilanGol": 8,
-              "yenenGol": 6,
-              "puan": 9
-            },
-            {
-              "id": "124",
-              "ad": "Borussia Dortmund",
-              "kisaAd": "?",
-              "logo": null,
-              "sira": null,
-              "oynanmis": null,
-              "galibiyet": 3,
-              "beraberlik": null,
-              "maglubiyet": 1,
-              "atilanGol": 7,
-              "yenenGol": 5,
+              "maglubiyet": 2,
+              "atilanGol": 9,
+              "yenenGol": 9,
               "puan": 9
             },
             {
@@ -469,6 +483,20 @@
               "puan": 7
             },
             {
+              "id": "2980",
+              "ad": "Bodo/Glimt",
+              "kisaAd": "?",
+              "logo": null,
+              "sira": null,
+              "oynanmis": null,
+              "galibiyet": 2,
+              "beraberlik": null,
+              "maglubiyet": 2,
+              "atilanGol": 5,
+              "yenenGol": 9,
+              "puan": 7
+            },
+            {
               "id": "110",
               "ad": "Internazionale",
               "kisaAd": "?",
@@ -491,9 +519,9 @@
               "oynanmis": null,
               "galibiyet": 2,
               "beraberlik": null,
-              "maglubiyet": 2,
+              "maglubiyet": 3,
               "atilanGol": 10,
-              "yenenGol": 9,
+              "yenenGol": 10,
               "puan": 6
             },
             {
@@ -511,17 +539,31 @@
               "puan": 6
             },
             {
-              "id": "432",
-              "ad": "Galatasaray",
+              "id": "437",
+              "ad": "FC Porto",
               "kisaAd": "?",
               "logo": null,
               "sira": null,
               "oynanmis": null,
               "galibiyet": 2,
               "beraberlik": null,
-              "maglubiyet": 2,
+              "maglubiyet": 3,
+              "atilanGol": 7,
+              "yenenGol": 7,
+              "puan": 6
+            },
+            {
+              "id": "11420",
+              "ad": "RB Leipzig",
+              "kisaAd": "?",
+              "logo": null,
+              "sira": null,
+              "oynanmis": null,
+              "galibiyet": 2,
+              "beraberlik": null,
+              "maglubiyet": 3,
               "atilanGol": 8,
-              "yenenGol": 9,
+              "yenenGol": 12,
               "puan": 6
             },
             {
@@ -595,48 +637,6 @@
               "puan": 4
             },
             {
-              "id": "148",
-              "ad": "PSV Eindhoven",
-              "kisaAd": "?",
-              "logo": null,
-              "sira": null,
-              "oynanmis": null,
-              "galibiyet": 1,
-              "beraberlik": null,
-              "maglubiyet": 2,
-              "atilanGol": 3,
-              "yenenGol": 4,
-              "puan": 4
-            },
-            {
-              "id": "2980",
-              "ad": "Bodo/Glimt",
-              "kisaAd": "?",
-              "logo": null,
-              "sira": null,
-              "oynanmis": null,
-              "galibiyet": 1,
-              "beraberlik": null,
-              "maglubiyet": 2,
-              "atilanGol": 4,
-              "yenenGol": 9,
-              "puan": 4
-            },
-            {
-              "id": "437",
-              "ad": "FC Porto",
-              "kisaAd": "?",
-              "logo": null,
-              "sira": null,
-              "oynanmis": null,
-              "galibiyet": 1,
-              "beraberlik": null,
-              "maglubiyet": 3,
-              "atilanGol": 6,
-              "yenenGol": 7,
-              "puan": 3
-            },
-            {
               "id": "114",
               "ad": "Napoli",
               "kisaAd": "?",
@@ -646,9 +646,23 @@
               "galibiyet": 1,
               "beraberlik": null,
               "maglubiyet": 3,
-              "atilanGol": 6,
-              "yenenGol": 11,
-              "puan": 3
+              "atilanGol": 8,
+              "yenenGol": 13,
+              "puan": 4
+            },
+            {
+              "id": "148",
+              "ad": "PSV Eindhoven",
+              "kisaAd": "?",
+              "logo": null,
+              "sira": null,
+              "oynanmis": null,
+              "galibiyet": 1,
+              "beraberlik": null,
+              "maglubiyet": 3,
+              "atilanGol": 4,
+              "yenenGol": 9,
+              "puan": 4
             },
             {
               "id": "102",
@@ -662,34 +676,6 @@
               "maglubiyet": 3,
               "atilanGol": 8,
               "yenenGol": 14,
-              "puan": 3
-            },
-            {
-              "id": "887",
-              "ad": "AEK Athens",
-              "kisaAd": "?",
-              "logo": null,
-              "sira": null,
-              "oynanmis": null,
-              "galibiyet": 1,
-              "beraberlik": null,
-              "maglubiyet": 3,
-              "atilanGol": 5,
-              "yenenGol": 11,
-              "puan": 3
-            },
-            {
-              "id": "11420",
-              "ad": "RB Leipzig",
-              "kisaAd": "?",
-              "logo": null,
-              "sira": null,
-              "oynanmis": null,
-              "galibiyet": 1,
-              "beraberlik": null,
-              "maglubiyet": 3,
-              "atilanGol": 5,
-              "yenenGol": 11,
               "puan": 3
             },
             {
@@ -707,6 +693,20 @@
               "puan": 3
             },
             {
+              "id": "887",
+              "ad": "AEK Athens",
+              "kisaAd": "?",
+              "logo": null,
+              "sira": null,
+              "oynanmis": null,
+              "galibiyet": 1,
+              "beraberlik": null,
+              "maglubiyet": 4,
+              "atilanGol": 5,
+              "yenenGol": 12,
+              "puan": 3
+            },
+            {
               "id": "142",
               "ad": "Feyenoord Rotterdam",
               "kisaAd": "?",
@@ -715,9 +715,9 @@
               "oynanmis": null,
               "galibiyet": 1,
               "beraberlik": null,
-              "maglubiyet": 3,
+              "maglubiyet": 4,
               "atilanGol": 4,
-              "yenenGol": 11,
+              "yenenGol": 12,
               "puan": 3
             },
             {
@@ -729,9 +729,9 @@
               "oynanmis": null,
               "galibiyet": 1,
               "beraberlik": null,
-              "maglubiyet": 3,
-              "atilanGol": 4,
-              "yenenGol": 16,
+              "maglubiyet": 4,
+              "atilanGol": 5,
+              "yenenGol": 19,
               "puan": 3
             },
             {
@@ -771,15 +771,15 @@
               "oynanmis": null,
               "galibiyet": null,
               "beraberlik": null,
-              "maglubiyet": 4,
+              "maglubiyet": 5,
               "atilanGol": 1,
-              "yenenGol": 17,
+              "yenenGol": 19,
               "puan": null
             }
           ]
         }
       ],
-      "guncellendi": "2026-11-24T17:20:22.322675+00:00"
+      "guncellendi": "2026-11-25T01:31:39.846429+00:00"
     },
     "uel": {
       "lig": "uel",
@@ -1295,7 +1295,7 @@
           ]
         }
       ],
-      "guncellendi": "2026-11-24T17:20:22.405471+00:00"
+      "guncellendi": "2026-11-25T01:31:39.913724+00:00"
     },
     "uclconf": {
       "lig": "uclconf",
@@ -1811,7 +1811,7 @@
           ]
         }
       ],
-      "guncellendi": "2026-11-24T17:20:22.495225+00:00"
+      "guncellendi": "2026-11-25T01:31:40.018413+00:00"
     }
   }
 }
