@@ -1,33 +1,33 @@
 {
   "fotomaç_ana_sayfa": {
-    "sonBasari": "2026-11-27T13:12:33.638474+00:00",
+    "sonBasari": "2026-11-27T22:08:03.489195+00:00",
     "hata": null,
     "durum": "aktif"
   },
   "fotomaç_transfer": {
-    "sonBasari": "2026-11-27T13:12:33.638479+00:00",
+    "sonBasari": "2026-11-27T22:08:03.489201+00:00",
     "hata": null,
     "durum": "aktif"
   },
   "aspor_ana_sayfa": {
-    "sonBasari": "2026-11-27T13:12:33.638482+00:00",
+    "sonBasari": "2026-11-27T22:08:03.489203+00:00",
     "hata": null,
     "durum": "aktif"
   },
   "sporx": {
-    "sonBasari": "2026-11-27T13:12:33.638484+00:00",
+    "sonBasari": "2026-11-27T22:08:03.489211+00:00",
     "hata": "HTTP 404",
     "durum": "boş"
   },
   "sabah_spor": {
-    "sonBasari": "2026-11-27T13:12:33.638486+00:00",
+    "sonBasari": "2026-11-27T22:08:03.489213+00:00",
     "hata": null,
     "durum": "aktif"
   },
   "hürriyet_spor": {
-    "sonBasari": "2026-11-27T13:12:33.638488+00:00",
+    "sonBasari": "2026-11-27T22:08:03.489215+00:00",
     "hata": null,
     "durum": "aktif"
   },
-  "guncellendi": "2026-11-27T13:12:33.638490+00:00"
+  "guncellendi": "2026-11-27T22:08:03.489217+00:00"
 }
