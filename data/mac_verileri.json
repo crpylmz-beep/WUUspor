@@ -1,7 +1,7 @@
 {
   "toplam": 2,
   "canli": 0,
-  "guncellendi": "2026-11-28T03:54:01.842134+00:00",
+  "guncellendi": "2026-11-28T12:49:54.138509+00:00",
   "maclar": [
     {
       "id": "401888236",
@@ -30,7 +30,7 @@
       "dakika": "0'",
       "canli": false,
       "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-28T03:54:01.725743+00:00"
+      "guncellendi": "2026-11-28T12:49:53.997892+00:00"
     },
     {
       "id": "401888368",
@@ -59,7 +59,7 @@
       "dakika": "0'",
       "canli": false,
       "durumKisaDetay": "Scheduled",
-      "guncellendi": "2026-11-28T03:54:01.725766+00:00"
+      "guncellendi": "2026-11-28T12:49:53.997912+00:00"
     }
   ]
 }
